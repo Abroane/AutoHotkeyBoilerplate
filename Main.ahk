@@ -24,4 +24,3 @@ Else
 #Include *i %A_ScriptDir%\Scripts\Hotkeys.ahk
 #Include *i %A_ScriptDir%\Scripts\AppSpecific.ahk
 #Include *i %A_ScriptDir%\Scripts\HotStrings.ahk
-#include %A_ScriptDir%\Util\Pederson\Host.ahk
