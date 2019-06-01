@@ -15,14 +15,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include %A_ScriptDir%\Util\TrayMenu.ahk
 
 ;-------------------------------------------------------------------------------
-;;; Command Scripts ;;;
-;-------------------------------------------------------------------------------
-
-#Include *i %A_ScriptDir%\Scripts\Hotkeys.ahk
-#Include *i %A_ScriptDir%\Scripts\AppSpecific.ahk
-#Include *i %A_ScriptDir%\Scripts\HotStrings.ahk
-
-;-------------------------------------------------------------------------------
 ;;; Setting.ini controlled scripts ;;;
 ;-------------------------------------------------------------------------------
 
@@ -36,6 +28,15 @@ Else
 	DetectHiddenWindows, On 
 	WinClose, %A_ScriptDir%\programs\AutoCorrect.ahk ahk_class AutoHotkey
 }
+
+;-------------------------------------------------------------------------------
+;;; Command Scripts ;;;
+;-------------------------------------------------------------------------------
+
+#Include *i %A_ScriptDir%\Scripts\Hotkeys.ahk
+#Include *i %A_ScriptDir%\Scripts\AppSpecific.ahk
+#Include *i %A_ScriptDir%\Scripts\HotStrings.ahk
+
 
 ;-------------------------------------------------------------------------------
 ;;; Script Programs ;;;
