@@ -129,22 +129,22 @@ else if Pedersen = url ; Open an URL from the clipboard (naive - will try to run
 ;-------------------------------------------------------------------------------
 ;;; INTERACT WITH THIS AHK SCRIPT ;;;
 ;-------------------------------------------------------------------------------
-else if Pedersen = rel ; Reload this script
+else if Pedersen = ahk.rel ; Reload this script
 {
     gui_destroy() ; removes the GUI even when the reload fails
     Reload
 }
-else if Pedersen = dir ; Open the directory for this script
+else if Pedersen = ahk.dir ; Open the directory for this script
 {
     gui_destroy()
     Run, %A_ScriptDir%
 }
-else if Pedersen = host ; Edit host script
+else if Pedersen = ahk.host ; Edit host script
 {
     gui_destroy()
     run, notepad.exe "%A_ScriptFullPath%"
 }
-else if Pedersen = user ; Edit GUI user commands
+else if Pedersen = ahk.user ; Edit GUI user commands
 {
     gui_destroy()
     run, notepad.exe "%A_ScriptDir%\Scripts\PedersonGui_UserCommands.ahk"

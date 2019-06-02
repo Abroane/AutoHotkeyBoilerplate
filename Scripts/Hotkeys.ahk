@@ -50,26 +50,22 @@
 
         ;
 
-        h::Send {`%}
-        j::Send {+}
-        k::Send {-}
-        l::Send {*}
-        `;::Send {/}
-        '::Send {=}
-        y::Send {^}
-        u::Send {&}
-        i::Send {|}
-        o::Send {!}
-        p::Send {~}
-        [::Send {$}
-        ]::Send {@}
-        m::Send {#} 
-
     ;-------------------------------------------------------------------------------
-    ;OS/WIN modified Capslock Shortcuts ( All shirtcuts on this modifier are windows specific )
+    ;OS/WIN modified Capslock Shortcuts ( All shortcuts on this modifier are general windows shortcuts )
     ;-------------------------------------------------------------------------------
 
         #p::  Winset, Alwaysontop, , A  ;p for pin
+
+            
+        #m::           ;This will clear extra line breaks from selected text (Source = 1a)
+            temp := clipboardall
+            clipboard :=
+            sendinput ^x
+            clipwait
+            loop parse, clipboard, `n`t, `r%a_space%
+                sendinput % a_loopfield a_space
+            clipboard := temp
+            return
 
     ;-------------------------------------------------------------------------------
     ;ALT Modified Capslock Shortcuts

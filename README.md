@@ -1,22 +1,3 @@
-# AutoHotkey Boilerplate
-
-A boilerplate to help jumpstart a script for personal productivity
-
-## Goal
-
-- Provide easy access to all the features of AutoHotkey 
-- Understandable structure for future additions
-
-## Installation
-
-Prerequisite: Install [AutoHotkey](http://ahkscript.org/) from [ahkscript.org](http://ahkscript.org/)
-
-Options: 
-
-- `git clone https://github.com/denolfe/AutoHotkey-Boilerplate.git`
-- Download the repo and unzip
-- Fork to your own repo, then clone or download
-
 ## Usage
 
 1. Edit `Settings.ini` as needed
@@ -44,3 +25,15 @@ Options:
 ## Contributors
 
 ## License
+
+
+## Credits (some things have been altered from their original format but this is where i got the scripts to start from)
+
+Whole starting point            - denolfe           from https://github.com/denolfe/AutoHotkeyBoilerplate
+
+PedersonGUI.ahk                 - plul              from https://github.com/plul/Public-AutoHotKey-Scripts
+PedersonGUI_UserCommands.ahk    - plul              from https://github.com/plul/Public-AutoHotKey-Scripts
+
+Hotkeys.ahk
+    1a - radiantcabbage     from https://www.reddit.com/r/AutoHotkey/comments/2zd53b/consolidate_lines_hotkey_script_for_you/cpia49p?utm_source=share&utm_medium=web2x
+

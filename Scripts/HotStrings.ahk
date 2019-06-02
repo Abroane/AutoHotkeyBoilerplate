@@ -1,5 +1,10 @@
-/*
+﻿/*
  HotString Documentation: http://ahkscript.org/docs/Hotstrings.htm
+
+  !!!! NOTE:IF YOU ARE HAVING ISSUES GETTINGS NON-STANDARD CHARACTERS TO PRINT ON REPLACE
+  RESAVE THIS FILE VIA NOTEPAD AND THE ISSUE WILL BE FIXED.  IF THIS MESSAGE IS STILL UP
+  I HAVE NOT FOUND A PERMANENT SOLUTION THAT ALLOWS ME TO ONLY USE VISUAL STUDIO PRO !!!!
+   -- PS SEEMS TO BE WORKING FINE FOR NOW, WILL LEAVE UP FOR A BIT AS A REMINDER --
 
  Examples:
 
@@ -15,13 +20,16 @@
 ;-------------------------------------------------------------------------------
 ;;; Language Based Strings ;;;
 ;-------------------------------------------------------------------------------
-/*This is for auto swapping strings for special characters
-*/
+  /*This is for auto swapping strings for special characters
+  */
   ;-------------------------------------------------------------------------------
   ;;; Symbols ;;;
   ;-------------------------------------------------------------------------------
 
       :://copyright::©
+      :://registered::®
+      :://fahrenheit::℉
+      :://celsius::℃
 
   ;-------------------------------------------------------------------------------
   ;;; Greek ;;;
