@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+	<Board BoardHeight="1000" BoardWidth="1000"></Board>
+	<Controls Down="Down" Left="Left" Right="Right" Settings="Escape" Up="Up" Zoom="A"></Controls>
+	<Snake Body1="65280" Body2="39168" Head="255" Length="4" Size="10" Zen="0"></Snake>
+</Settings>

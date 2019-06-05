@@ -16,7 +16,9 @@
 ;------------------------------------------------------------------------------------------------
 ;A function to open a file for editing in editor listed in settings.ini
 ;------------------------------------------------------------------------------------------------
-
+    ;Currently Used by
+    ;-
+    
     Edit(file)
     {
         global
@@ -27,7 +29,7 @@
 ;A function to escape characters like & for use in URLs.
 ;------------------------------------------------------------------------------------------------
     ;Currently Used by
-    ;- PedersonGUI.ahk
+    ;- PedersonGUI.ahk - script i originally got it from
     
     uriEncode(str) {
         f = %A_FormatInteger%

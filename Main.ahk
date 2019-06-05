@@ -9,7 +9,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;;; System Scripts ;;;
 ;-------------------------------------------------------------------------------
 
-#Include *i %A_ScriptDir%\Util\Functions.ahk
+#Include %A_ScriptDir%\Util\Functions.ahk		
+#Include %A_ScriptDir%\Util\subroutines.ahk
 #Include %A_ScriptDir%\Util\Init.ahk
 #Include %A_ScriptDir%\Util\ParseSettings.ahk
 #Include %A_ScriptDir%\Util\TrayMenu.ahk

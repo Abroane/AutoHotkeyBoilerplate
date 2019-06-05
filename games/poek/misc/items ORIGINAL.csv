@@ -1,0 +1,1961 @@
+; version 1: Thursday, June 30, 2016
+; created: Thursday, June 30, 2016
+; by: tidbit
+
+
+
+; name,dmg,armor,food,qty
+; name  = The items name,try to keep short
+; dmg   = Damage to enemy. 0-10=low, 11-20=medium, 21+=high
+; armor = Adds hp to the wearer. 0-14=low, 15-30=medium, 31+=high
+; eat   = Heals/damages to current HP. 0-10=low, 11-20=medium, 21+=high
+; qty   = The amount per drop,roughly.
+;         If qty is 3 and an enemy drops 2, you get up to 6 (random [1-3]*2).
+
+; these are testing items.
+; primarily weapons, dmg ,armor ,eat ,qty
+Knife               ,8   ,3     ,-35 ,1
+Coffeepot           ,6   ,2     ,0   ,1
+Broom               ,8   ,1     ,-2  ,1
+Rope                ,4   ,0     ,0   ,1
+Puppet              ,3   ,2     ,0   ,1
+
+; primarily armors ,dmg,armor,food,qty
+Manhole             ,5   ,26    ,-10 ,1
+Wheelbarrow         ,3   ,25    ,-10 ,1
+
+; primarily foods  ,dmg,armor,food,qty
+Apple               ,2   ,2     ,20  ,2
+Jelly               ,1   ,0     ,15  ,3
+Cephalopod          ,5   ,10    ,10  ,1
+
+; random stuff     ,dmg,armor,food,qty
+Hedge               ,2   ,2     ,1   ,1
+Girdle              ,2   ,-3    ,0   ,1
+Document            ,1   ,0     ,0   ,1
+
+
+
+; main list
+!; primarily weapons,dmg,armor,food,qty
+!Computer Monitor,3,1,0,1
+!Cellular Phone,3,1,0,1
+!Ping Pong Ball,3,1,0,1
+!Remote Control,3,1,0,1
+!Sledgehammer,3,1,0,1
+!Watering Pot,3,1,0,1
+!Funnel Cloud,3,1,0,1
+!Electric Fan,3,1,0,1
+!Mobile Phone,3,1,0,1
+!Rolling Pin,3,1,0,1
+!Scaffolding,3,1,0,1
+!Screwdriver,3,1,0,1
+!Martial Art,3,1,0,1
+!Firecracker,3,1,0,1
+!Wine Bottle,3,1,0,1
+!Hockey Puck,3,1,0,1
+!Coffee Mug,3,1,0,1
+!Microphone,3,1,0,1
+!Typewriter,3,1,0,1
+!Projectile,3,1,0,1
+!Snowmobile,3,1,0,1
+!Ammunition,3,1,0,1
+!; primarily weapons,dmg,armor,food,qty
+!Smartphone,3,1,0,1
+!Scattergun,3,1,0,1
+!Lawn Mower,3,1,0,1
+!Sculpture,3,1,0,1
+!Detergent,3,1,0,1
+!Tableware,3,1,0,1
+!Saxophone,3,1,0,1
+!Telephone,3,1,0,1
+!Bulldozer,3,1,0,1
+!Timepiece,3,1,0,1
+!Golf Club,3,1,0,1
+!Lightbulb,3,1,0,1
+!Golf Ball,3,1,0,1
+!Ice Skate,3,1,0,1
+!Lightning,3,1,0,1
+!Barracuda,3,1,0,1
+!Power Saw,3,1,0,1
+!Cellphone,3,1,0,1
+!Chain Saw,3,1,0,1
+!Polka Dot,3,1,0,1
+!Pitchfork,3,1,0,1
+!Structure,3,1,0,1
+!Piggybank,3,1,0,1
+!Pie Chart,3,1,0,1
+!; primarily weapons,dmg,armor,food,qty
+!Stopwatch,3,1,0,1
+!Metal Saw,3,1,0,1
+!Paintball,3,1,0,1
+!Microwave,3,1,0,1
+!Blowtorch,3,1,0,1
+!Appliance,3,1,0,1
+!Xylophone,3,1,0,1
+!Accordion,3,1,0,1
+!Cogwheel,3,1,0,1
+!Payphone,3,1,0,1
+!Clarinet,3,1,0,1
+!Revolver,3,1,0,1
+!Sandpile,3,1,0,1
+!Saucepan,3,1,0,1
+!Jerrycan,3,1,0,1
+!Snowball,3,1,0,1
+!Softball,3,1,0,1
+!Sparkler,3,1,0,1
+!Dumbbell,3,1,0,1
+!Blizzard,3,1,0,1
+!Hack Saw,3,1,0,1
+!Trombone,3,1,0,1
+!Firework,3,1,0,1
+!Flagpole,3,1,0,1
+!; primarily weapons,dmg,armor,food,qty
+!Wildfire,3,1,0,1
+!Woodwind,3,1,0,1
+!Football,3,1,0,1
+!Caliper,3,1,0,1
+!Bonfire,3,1,0,1
+!Flipper,3,1,0,1
+!Firearm,3,1,0,1
+!Blender,3,1,0,1
+!Antenna,3,1,0,1
+!Canteen,3,1,0,1
+!Sandbag,3,1,0,1
+!Monocle,3,1,0,1
+!Plunger,3,1,0,1
+!Spatula,3,1,0,1
+!Tankard,3,1,0,1
+!Crowbar,3,1,0,1
+!Backhoe,3,1,0,1
+!Mailbox,3,1,0,1
+!Shotgun,3,1,0,1
+!Beehive,3,1,0,1
+!Handbag,3,1,0,1
+!Luggage,3,1,0,1
+!Handgun,3,1,0,1
+!Baggage,3,1,0,1
+!Cyclone,3,1,0,1
+!; primarily weapons,dmg,armor,food,qty
+!Toolbox,3,1,0,1
+!Rattler,3,1,0,1
+!Ratchet,3,1,0,1
+!Skillet,3,1,0,1
+!Hydrant,3,1,0,1
+!Rainbow,3,1,0,1
+!Printer,3,1,0,1
+!Tornado,3,1,0,1
+!Pry Bar,3,1,0,1
+!Barbell,3,1,0,1
+!Lantern,3,1,0,1
+!Trumpet,3,1,0,1
+!Ukulele,3,1,0,1
+!Putter,3,1,0,1
+!Racket,3,1,0,1
+!Pulley,3,1,0,1
+!Trophy,3,1,0,1
+!Ladder,3,1,0,1
+!Tripod,3,1,0,1
+!Domino,3,1,0,1
+!Violin,3,1,0,1
+!Hammer,3,1,0,1
+!Shovel,3,1,0,1
+!Crutch,3,1,0,1
+!; primarily weapons,dmg,armor,food,qty
+!Rocket,3,1,0,1
+!Mallet,3,1,0,1
+!Guitar,3,1,0,1
+!Faucet,3,1,0,1
+!Teapot,3,1,0,1
+!Teacup,3,1,0,1
+!Grater,3,1,0,1
+!Mirror,3,1,0,1
+!Goblet,3,1,0,1
+!Fiddle,3,1,0,1
+!Bottle,3,1,0,1
+!Gadget,3,1,0,1
+!Wrench,3,1,0,1
+!Frigid,3,1,0,1
+!Petrol,3,1,0,1
+!Kettle,3,1,0,1
+!Stool,3,1,0,1
+!Clown,3,1,0,1
+!Storm,3,1,0,1
+!Straw,3,1,0,1
+!Clamp,3,1,0,1
+!Block,3,1,0,1
+!Spoon,3,1,0,1
+!Blade,3,1,0,1
+!Conch,3,1,0,1
+!; primarily weapons,dmg,armor,food,qty
+!Sword,3,1,0,1
+!Money,3,1,0,1
+!Poker,3,1,0,1
+!Chair,3,1,0,1
+!Chain,3,1,0,1
+!Spade,3,1,0,1
+!Cello,3,1,0,1
+!Magic,3,1,0,1
+!Light,3,1,0,1
+!Torch,3,1,0,1
+!Lathe,3,1,0,1
+!Ladle,3,1,0,1
+!Truck,3,1,0,1
+!Knife,3,1,0,1
+!Pylon,3,1,0,1
+!Viola,3,1,0,1
+!Drone,3,1,0,1
+!Sieve,3,1,0,1
+!Watch,3,1,0,1
+!Dryer,3,1,0,1
+!Rifle,3,1,0,1
+!Ember,3,1,0,1
+!Wheel,3,1,0,1
+!; primarily weapons,dmg,armor,food,qty
+!Shear,3,1,0,1
+!Grave,3,1,0,1
+!Grail,3,1,0,1
+!Anvil,3,1,0,1
+!Globe,3,1,0,1
+!Winch,3,1,0,1
+!Flame,3,1,0,1
+!Flare,3,1,0,1
+!Flute,3,1,0,1
+!Cable,3,1,0,1
+!Fork,3,1,0,1
+!Sand,3,1,0,1
+!Sack,3,1,0,1
+!Fire,3,1,0,1
+!Wood,3,1,0,1
+!Sign,3,1,0,1
+!Wire,3,1,0,1
+!Gear,3,1,0,1
+!Rake,3,1,0,1
+!Rain,3,1,0,1
+!Puck,3,1,0,1
+!Harp,3,1,0,1
+!Ball,3,1,0,1
+!Pole,3,1,0,1
+!Hook,3,1,0,1
+!; primarily weapons,dmg,armor,food,qty
+!Horn,3,1,0,1
+!Club,3,1,0,1
+!Tuba,3,1,0,1
+!Lava,3,1,0,1
+!Cord,3,1,0,1
+!Tape,3,1,0,1
+!Lego,3,1,0,1
+!Bell,3,1,0,1
+!Dial,3,1,0,1
+!Tool,3,1,0,1
+!Cube,3,1,0,1
+!Cup,3,1,0,1
+!Sax,3,1,0,1
+!Saw,3,1,0,1
+!Mop,3,1,0,1
+!Mug,3,1,0,1
+!Oar,3,1,0,1
+!Ski,3,1,0,1
+!Orb,3,1,0,1
+!Key,3,1,0,1
+!Pan,3,1,0,1
+!Jug,3,1,0,1
+!Jar,3,1,0,1
+!Bar,3,1,0,1
+!Axe,3,1,0,1
+!; primarily weapons,dmg,armor,food,qty
+!Ice,3,1,0,1
+!Pot,3,1,0,1
+!HIV,3,1,0,1
+@; primarily armors,dmg,armor,food,qty
+@Ten-Gallon Hat,1,3,0,1
+@Chopping Board,1,3,0,1
+@Jack-O-Lantern,1,3,0,1
+@Cardboard Box,1,3,0,1
+@Cutting Board,1,3,0,1
+@Warning Sign,1,3,0,1
+@Refrigerator,1,3,0,1
+@Wedding Gown,1,3,0,1
+@Boogie Board,1,3,0,1
+@Rollerblade,1,3,0,1
+@Life Jacket,1,3,0,1
+@Feather Boa,1,3,0,1
+@Bungee Cord,1,3,0,1
+@Street Sign,1,3,0,1
+@Whiteboard,1,3,0,1
+@Cowboy Hat,1,3,0,1
+@Blackboard,1,3,0,1
+@Chalkboard,1,3,0,1
+@Pocketbook,1,3,0,1
+@Dart Board,1,3,0,1
+@Teddy Bear,1,3,0,1
+@Semi Truck,1,3,0,1
+@Scarecrow,1,3,0,1
+@; primarily armors,dmg,armor,food,qty
+@Turntable,1,3,0,1
+@Billboard,1,3,0,1
+@Black Tie,1,3,0,1
+@Headphone,1,3,0,1
+@Pine Tree,1,3,0,1
+@Body Suit,1,3,0,1
+@Paper Bag,1,3,0,1
+@Straw Hat,1,3,0,1
+@Blindfold,1,3,0,1
+@Clothing,1,3,0,1
+@Magazine,1,3,0,1
+@Pit Bull,1,3,0,1
+@Placemat,1,3,0,1
+@Cat Suit,1,3,0,1
+@Calendar,1,3,0,1
+@; primarily armors,dmg,armor,food,qty
+@Lab Coat,1,3,0,1
+@Sombrero,1,3,0,1
+@Headgear,1,3,0,1
+@Earphone,1,3,0,1
+@Gym Shoe,1,3,0,1
+@Swimwear,1,3,0,1
+@Textbook,1,3,0,1
+@Toolbelt,1,3,0,1
+@Felt Hat,1,3,0,1
+@Wardrobe,1,3,0,1
+@Backpack,1,3,0,1
+@Footwear,1,3,0,1
+@Garment,1,3,0,1
+@; primarily armors,dmg,armor,food,qty
+@Necktie,1,3,0,1
+@Rowboat,1,3,0,1
+@Earmuff,1,3,0,1
+@Hardhat,1,3,0,1
+@Bedding,1,3,0,1
+@Top Hat,1,3,0,1
+@Snowman,1,3,0,1
+@Leotard,1,3,0,1
+@Bulldog,1,3,0,1
+@Sneaker,1,3,0,1
+@Unitard,1,3,0,1
+@Jewelry,1,3,0,1
+@; primarily armors,dmg,armor,food,qty
+@Slipper,1,3,0,1
+@Tuxedo,1,3,0,1
+@Turban,1,3,0,1
+@Python,1,3,0,1
+@Kimono,1,3,0,1
+@Barrel,1,3,0,1
+@Jacket,1,3,0,1
+@Beanie,1,3,0,1
+@Diaper,1,3,0,1
+@Beaver,1,3,0,1
+@Icebox,1,3,0,1
+@Tophat,1,3,0,1
+@Hubcap,1,3,0,1
+@Wallet,1,3,0,1
+@Helmet,1,3,0,1
+@Bucket,1,3,0,1
+@; primarily armors,dmg,armor,food,qty
+@Saddle,1,3,0,1
+@Fedora,1,3,0,1
+@Poncho,1,3,0,1
+@Bowtie,1,3,0,1
+@Carton,1,3,0,1
+@Mitten,1,3,0,1
+@Sandal,1,3,0,1
+@Sunhat,1,3,0,1
+@Wreath,1,3,0,1
+@; primarily armors,dmg,armor,food,qty
+@Cloak,1,3,0,1
+@Nappy,1,3,0,1
+@Table,1,3,0,1
+@Crate,1,3,0,1
+@Crown,1,3,0,1
+@Tiara,1,3,0,1
+@Denim,1,3,0,1
+@Kayak,1,3,0,1
+@Hijab,1,3,0,1
+@; primarily armors,dmg,armor,food,qty
+@Shawl,1,3,0,1
+@Apron,1,3,0,1
+@Glove,1,3,0,1
+@Scarf,1,3,0,1
+@Beret,1,3,0,1
+@Sari,1,3,0,1
+@Cape,1,3,0,1
+@Shoe,1,3,0,1
+@Garb,1,3,0,1
+@Robe,1,3,0,1
+@; primarily armors,dmg,armor,food,qty
+@Gong,1,3,0,1
+@Sock,1,3,0,1
+@Polo,1,3,0,1
+@Bowl,1,3,0,1
+@Boot,1,3,0,1
+@Book,1,3,0,1
+@Kilt,1,3,0,1
+@Suit,1,3,0,1
+@Tray,1,3,0,1
+@Cuff,1,3,0,1
+@; primarily armors,dmg,armor,food,qty
+@Lei,1,3,0,1
+@Bib,1,3,0,1
+@Tux,1,3,0,1
+@Bag,1,3,0,1
+@Tie,1,3,0,1
+@Bra,1,3,0,1
+@Hat,1,3,0,1
+#; primarily foods,dmg,armor,food,qty
+#Grilled Chicken,1,0,3,4
+#Tomato Ketchup,1,0,3,4
+#Monitor Lizard,1,0,3,4
+#Sunflower Seed,1,0,3,4
+#Chocolate Chip,1,0,3,4
+#Peanut Butter,1,0,3,4
+#Frozen Yogurt,1,0,3,4
+#Birthday Cake,1,0,3,4
+#Whipped Cream,1,0,3,4
+#Fried Chicken,1,0,3,4
+#Pocket Bread,1,0,3,4
+#Gingerbread,1,0,3,4
+#Caterpillar,1,0,3,4
+#Cauliflower,1,0,3,4
+#Green Onion,1,0,3,4
+#Bell Pepper,1,0,3,4
+#Potato Chip,1,0,3,4
+#Pomegranate,1,0,3,4
+#White Bread,1,0,3,4
+#Coffee Bean,1,0,3,4
+#Apple Sauce,1,0,3,4
+#Spring Roll,1,0,3,4
+#Frankfurter,1,0,3,4
+#Cooking Oil,1,0,3,4
+#; primarily foods,dmg,armor,food,qty
+#Cornflower,1,0,3,4
+#Strawberry,1,0,3,4
+#White Wine,1,0,3,4
+#Lunch Meat,1,0,3,4
+#Watermelon,1,0,3,4
+#Blackberry,1,0,3,4
+#Sour Cream,1,0,3,4
+#Sugar Cube,1,0,3,4
+#Vegetation,1,0,3,4
+#Grapefruit,1,0,3,4
+#Cantaloupe,1,0,3,4
+#Green Bean,1,0,3,4
+#Candy Cane,1,0,3,4
+#Sauerkraut,1,0,3,4
+#Jellybean,1,0,3,4
+#Butterfly,1,0,3,4
+#Guacamole,1,0,3,4
+#Sunflower,1,0,3,4
+#Dandelion,1,0,3,4
+#Carnation,1,0,3,4
+#Bubblegum,1,0,3,4
+#Ice Cream,1,0,3,4
+#Vegetable,1,0,3,4
+#Soy Sauce,1,0,3,4
+#Dragonfly,1,0,3,4
+#; primarily foods,dmg,armor,food,qty
+#Starfruit,1,0,3,4
+#Macadamia,1,0,3,4
+#Chocolate,1,0,3,4
+#Fruitcake,1,0,3,4
+#Pineapple,1,0,3,4
+#Margarita,1,0,3,4
+#Cranberry,1,0,3,4
+#Pepperoni,1,0,3,4
+#Artichoke,1,0,3,4
+#Blueberry,1,0,3,4
+#Millipede,1,0,3,4
+#Cold Meat,1,0,3,4
+#Fried Egg,1,0,3,4
+#Condiment,1,0,3,4
+#Bean Curd,1,0,3,4
+#Hamburger,1,0,3,4
+#Omelette,1,0,3,4
+#Medicine,1,0,3,4
+#Meatloaf,1,0,3,4
+#Crabmeat,1,0,3,4
+#Meatball,1,0,3,4
+#Marigold,1,0,3,4
+#Pine Nut,1,0,3,4
+#Cinnamon,1,0,3,4
+#Cilantro,1,0,3,4
+#; primarily foods,dmg,armor,food,qty
+#Mackerel,1,0,3,4
+#Cucumber,1,0,3,4
+#Lollipop,1,0,3,4
+#Zucchini,1,0,3,4
+#Red Wine,1,0,3,4
+#Daffodil,1,0,3,4
+#Sandwich,1,0,3,4
+#Lemonade,1,0,3,4
+#Jalapeno,1,0,3,4
+#Smoothie,1,0,3,4
+#Icecream,1,0,3,4
+#Broccoli,1,0,3,4
+#Doughnut,1,0,3,4
+#Honeydew,1,0,3,4
+#Stir Fry,1,0,3,4
+#Dumpling,1,0,3,4
+#Egg Yolk,1,0,3,4
+#Eggplant,1,0,3,4
+#Habanero,1,0,3,4
+#Beverage,1,0,3,4
+#Beetroot,1,0,3,4
+#Teriyaki,1,0,3,4
+#Tortilla,1,0,3,4
+#Barnacle,1,0,3,4
+#Flapjack,1,0,3,4
+#; primarily foods,dmg,armor,food,qty
+#Seafood,1,0,3,4
+#Calzone,1,0,3,4
+#Yoghurt,1,0,3,4
+#Pancake,1,0,3,4
+#Coconut,1,0,3,4
+#Scallop,1,0,3,4
+#Pierogi,1,0,3,4
+#Oatmeal,1,0,3,4
+#Spinach,1,0,3,4
+#Seaweed,1,0,3,4
+#Gelatin,1,0,3,4
+#Strudel,1,0,3,4
+#Sardine,1,0,3,4
+#Platter,1,0,3,4
+#Apricot,1,0,3,4
+#Tapioca,1,0,3,4
+#Cracker,1,0,3,4
+#Tequila,1,0,3,4
+#Avocado,1,0,3,4
+#Martini,1,0,3,4
+#Popcorn,1,0,3,4
+#Cabbage,1,0,3,4
+#Brownie,1,0,3,4
+#Halibut,1,0,3,4
+#Baklava,1,0,3,4
+#; primarily foods,dmg,armor,food,qty
+#Cupcake,1,0,3,4
+#Rhubarb,1,0,3,4
+#Caramel,1,0,3,4
+#Poultry,1,0,3,4
+#Burrito,1,0,3,4
+#Hotcake,1,0,3,4
+#Lettuce,1,0,3,4
+#Vinegar,1,0,3,4
+#Pretzel,1,0,3,4
+#Pudding,1,0,3,4
+#Pumpkin,1,0,3,4
+#Ketchup,1,0,3,4
+#Turnip,1,0,3,4
+#Kimchi,1,0,3,4
+#Urchin,1,0,3,4
+#Barley,1,0,3,4
+#Veggie,1,0,3,4
+#Banana,1,0,3,4
+#Burger,1,0,3,4
+#Hotdog,1,0,3,4
+#Celery,1,0,3,4
+#Waffle,1,0,3,4
+#Carrot,1,0,3,4
+#Tomato,1,0,3,4
+#Liquor,1,0,3,4
+#; primarily foods,dmg,armor,food,qty
+#Durian,1,0,3,4
+#Potato,1,0,3,4
+#Butter,1,0,3,4
+#Fajita,1,0,3,4
+#Brandy,1,0,3,4
+#Cereal,1,0,3,4
+#Salami,1,0,3,4
+#Salmon,1,0,3,4
+#Mojito,1,0,3,4
+#Cookie,1,0,3,4
+#Muffin,1,0,3,4
+#Ginger,1,0,3,4
+#Cherry,1,0,3,4
+#Garlic,1,0,3,4
+#Wonton,1,0,3,4
+#Almond,1,0,3,4
+#Sprout,1,0,3,4
+#Orchid,1,0,3,4
+#Coffee,1,0,3,4
+#Pickle,1,0,3,4
+#Scarab,1,0,3,4
+#Clover,1,0,3,4
+#Yogurt,1,0,3,4
+#Papaya,1,0,3,4
+#Fondue,1,0,3,4
+#; primarily foods,dmg,armor,food,qty
+#Peanut,1,0,3,4
+#Peach,1,0,3,4
+#Steak,1,0,3,4
+#Booze,1,0,3,4
+#Pecan,1,0,3,4
+#Cocoa,1,0,3,4
+#Onion,1,0,3,4
+#Cider,1,0,3,4
+#Nacho,1,0,3,4
+#Pizza,1,0,3,4
+#Plant,1,0,3,4
+#Berry,1,0,3,4
+#Syrup,1,0,3,4
+#Melon,1,0,3,4
+#Tater,1,0,3,4
+#Crepe,1,0,3,4
+#Bread,1,0,3,4
+#Mango,1,0,3,4
+#Thyme,1,0,3,4
+#Curry,1,0,3,4
+#Lemon,1,0,3,4
+#Kabob,1,0,3,4
+#Juice,1,0,3,4
+#Jello,1,0,3,4
+#Donut,1,0,3,4
+#; primarily foods,dmg,armor,food,qty
+#Ramen,1,0,3,4
+#Vodka,1,0,3,4
+#Drink,1,0,3,4
+#Honey,1,0,3,4
+#Bagel,1,0,3,4
+#Wheat,1,0,3,4
+#Guppy,1,0,3,4
+#Bacon,1,0,3,4
+#Gravy,1,0,3,4
+#Salad,1,0,3,4
+#Grape,1,0,3,4
+#Sauce,1,0,3,4
+#Candy,1,0,3,4
+#Fruit,1,0,3,4
+#Acorn,1,0,3,4
+#Scone,1,0,3,4
+#Cake,1,0,3,4
+#Yolk,1,0,3,4
+#Flan,1,0,3,4
+#Seed,1,0,3,4
+#Salt,1,0,3,4
+#Rice,1,0,3,4
+#Carp,1,0,3,4
+#Wine,1,0,3,4
+#Grub,1,0,3,4
+#; primarily foods,dmg,armor,food,qty
+#Cell,1,0,3,4
+#Soda,1,0,3,4
+#Pork,1,0,3,4
+#Soup,1,0,3,4
+#Herb,1,0,3,4
+#Plum,1,0,3,4
+#Pita,1,0,3,4
+#Chip,1,0,3,4
+#Clam,1,0,3,4
+#Spud,1,0,3,4
+#Pear,1,0,3,4
+#Stew,1,0,3,4
+#Java,1,0,3,4
+#Kale,1,0,3,4
+#Kelp,1,0,3,4
+#Tuna,1,0,3,4
+#Bean,1,0,3,4
+#Corn,1,0,3,4
+#Milk,1,0,3,4
+#Taco,1,0,3,4
+#Leek,1,0,3,4
+#Crab,1,0,3,4
+#Meat,1,0,3,4
+#Meal,1,0,3,4
+#Mead,1,0,3,4
+#; primarily foods,dmg,armor,food,qty
+#Beet,1,0,3,4
+#Mayo,1,0,3,4
+#Beer,1,0,3,4
+#Lime,1,0,3,4
+#Tofu,1,0,3,4
+#Beef,1,0,3,4
+#Food,1,0,3,4
+#Rum,1,0,3,4
+#Tea,1,0,3,4
+#Fig,1,0,3,4
+#Nut,1,0,3,4
+#Koi,1,0,3,4
+#Oat,1,0,3,4
+#Pea,1,0,3,4
+#Pie,1,0,3,4
+#Egg,1,0,3,4
+#Pop,1,0,3,4
+#Ham,1,0,3,4
+$; primarily misc,dmg,armor,food,qty
+$Hot Air Balloon,2,2,2,1
+$Piano Accordion,2,2,2,1
+$Vacuum Cleaner,2,2,2,1
+$Microwave Oven,2,2,2,1
+$Action Figure,2,2,2,1
+$Control Stick,2,2,2,1
+$Candle Holder,2,2,2,1
+$Shopping Bag,2,2,2,1
+$Sailing Boat,2,2,2,1
+$Rubber Stamp,2,2,2,1
+$Prairie Dog,2,2,2,1
+$Hummingbird,2,2,2,1
+$Sticky Note,2,2,2,1
+$Contraption,2,2,2,1
+$Woodpecker,2,2,2,1
+$Whirlybird,2,2,2,1
+$Maple Tree,2,2,2,1
+$Chinchilla,2,2,2,1
+$Chandelier,2,2,2,1
+$Pomeranian,2,2,2,1
+$Video Game,2,2,2,1
+$Skateboard,2,2,2,1
+$Calculator,2,2,2,1
+$Scrapbook,2,2,2,1
+$; primarily misc,dmg,armor,food,qty
+$Life Buoy,2,2,2,1
+$Snowboard,2,2,2,1
+$Treadmill,2,2,2,1
+$Generator,2,2,2,1
+$Spiderweb,2,2,2,1
+$Sprinkler,2,2,2,1
+$Checkbook,2,2,2,1
+$Whirligig,2,2,2,1
+$Stoplight,2,2,2,1
+$Streetcar,2,2,2,1
+$Oak Tree,2,2,2,1
+$Colander,2,2,2,1
+$Ornament,2,2,2,1
+$Painting,2,2,2,1
+$Cupboard,2,2,2,1
+$Building,2,2,2,1
+$Handcuff,2,2,2,1
+$Stroller,2,2,2,1
+$Tricycle,2,2,2,1
+$Umbrella,2,2,2,1
+$Armchair,2,2,2,1
+$Monument,2,2,2,1
+$Fountain,2,2,2,1
+$Forklift,2,2,2,1
+$Scooter,2,2,2,1
+$; primarily misc,dmg,armor,food,qty
+$Ottoman,2,2,2,1
+$Picture,2,2,2,1
+$Origami,2,2,2,1
+$Gamepad,2,2,2,1
+$Bouquet,2,2,2,1
+$Garland,2,2,2,1
+$Sundial,2,2,2,1
+$Bicycle,2,2,2,1
+$Placard,2,2,2,1
+$Cabinet,2,2,2,1
+$Sequoia,2,2,2,1
+$Termite,2,2,2,1
+$Machine,2,2,2,1
+$Hammock,2,2,2,1
+$Balloon,2,2,2,1
+$Redwood,2,2,2,1
+$Receipt,2,2,2,1
+$Drawing,2,2,2,1
+$Voucher,2,2,2,1
+$Lattice,2,2,2,1
+$Trolley,2,2,2,1
+$Battery,2,2,2,1
+$Puzzle,2,2,2,1
+$Dinghy,2,2,2,1
+$Beacon,2,2,2,1
+$; primarily misc,dmg,armor,food,qty
+$Keypad,2,2,2,1
+$Puddle,2,2,2,1
+$Record,2,2,2,1
+$Toilet,2,2,2,1
+$Ribbon,2,2,2,1
+$Throne,2,2,2,1
+$Plaque,2,2,2,1
+$Willow,2,2,2,1
+$Spigot,2,2,2,1
+$Candle,2,2,2,1
+$Spring,2,2,2,1
+$Pillar,2,2,2,1
+$Camera,2,2,2,1
+$Cobweb,2,2,2,1
+$Flower,2,2,2,1
+$Bongo,2,2,2,1
+$Booth,2,2,2,1
+$Patio,2,2,2,1
+$Phone,2,2,2,1
+$Piano,2,2,2,1
+$Stove,2,2,2,1
+$Clock,2,2,2,1
+$Chime,2,2,2,1
+$Plate,2,2,2,1
+$Chart,2,2,2,1
+$; primarily misc,dmg,armor,food,qty
+$Couch,2,2,2,1
+$Pouch,2,2,2,1
+$Snail,2,2,2,1
+$Tulip,2,2,2,1
+$Slide,2,2,2,1
+$Wagon,2,2,2,1
+$Shrub,2,2,2,1
+$Water,2,2,2,1
+$Grill,2,2,2,1
+$Graph,2,2,2,1
+$Canoe,2,2,2,1
+$Gizmo,2,2,2,1
+$Sedan,2,2,2,1
+$Gauge,2,2,2,1
+$Yacht,2,2,2,1
+$Scope,2,2,2,1
+$Cage,2,2,2,1
+$Yarn,2,2,2,1
+$Seat,2,2,2,1
+$Flag,2,2,2,1
+$Shed,2,2,2,1
+$Card,2,2,2,1
+$Silo,2,2,2,1
+$Sled,2,2,2,1
+$Fern,2,2,2,1
+$; primarily misc,dmg,armor,food,qty
+$Snow,2,2,2,1
+$Cart,2,2,2,1
+$Bulb,2,2,2,1
+$Sofa,2,2,2,1
+$Drum,2,2,2,1
+$Pine,2,2,2,1
+$Door,2,2,2,1
+$Dome,2,2,2,1
+$Doll,2,2,2,1
+$Coal,2,2,2,1
+$Kiln,2,2,2,1
+$Coin,2,2,2,1
+$Kite,2,2,2,1
+$Dice,2,2,2,1
+$Bike,2,2,2,1
+$Lamp,2,2,2,1
+$Moth,2,2,2,1
+$Tree,2,2,2,1
+$Moon,2,2,2,1
+$Tent,2,2,2,1
+$Lily,2,2,2,1
+$Tire,2,2,2,1
+$Map,2,2,2,1
+$Car,2,2,2,1
+$Ant,2,2,2,1
+$; primarily misc,dmg,armor,food,qty
+$Mud,2,2,2,1
+$Sun,2,2,2,1
+$Oak,2,2,2,1
+$Tub,2,2,2,1
+$Keg,2,2,2,1
+$Urn,2,2,2,1
+$Ivy,2,2,2,1
+$Web,2,2,2,1
+$TV,3,1,0,1
+%; primarily animal,dmg,armor,food,qty
+%Hoofed Mammal,3,3,2,1
+%Mountain Lion,3,3,2,1
+%Greyhound,3,3,2,1
+%Dalmatian,3,3,2,1
+%Tarantula,3,3,2,1
+%Centipede,3,3,2,1
+%Chameleon,3,3,2,1
+%Chihuahua,3,3,2,1
+%Porcupine,3,3,2,1
+%Crocodile,3,3,2,1
+%Wild Boar,3,3,2,1
+%Alligator,3,3,2,1
+%Parakeet,3,3,2,1
+%Reindeer,3,3,2,1
+%Sea Gull,3,3,2,1
+%Kangaroo,3,3,2,1
+%Sheepdog,3,3,2,1
+%Squirrel,3,3,2,1
+%Stingray,3,3,2,1
+%Hedgehog,3,3,2,1
+%Elephant,3,3,2,1
+%Gargoyle,3,3,2,1
+%Arachnid,3,3,2,1
+%; primarily animal,dmg,armor,food,qty
+%Flamingo,3,3,2,1
+%Scorpion,3,3,2,1
+%Pelican,3,3,2,1
+%Penguin,3,3,2,1
+%Pitbull,3,3,2,1
+%Sealion,3,3,2,1
+%Giraffe,3,3,2,1
+%Cheetah,3,3,2,1
+%Serpent,3,3,2,1
+%Sparrow,3,3,2,1
+%Terrier,3,3,2,1
+%Reptile,3,3,2,1
+%Caribou,3,3,2,1
+%Vulture,3,3,2,1
+%Leopard,3,3,2,1
+%Dolphin,3,3,2,1
+%Raccoon,3,3,2,1
+%Peacock,3,3,2,1
+%Turtle,3,3,2,1
+%Rabbit,3,3,2,1
+%Kitten,3,3,2,1
+%Puffin,3,3,2,1
+%Iguana,3,3,2,1
+%Toucan,3,3,2,1
+%Donkey,3,3,2,1
+%Lizard,3,3,2,1
+%Rodent,3,3,2,1
+%Mammal,3,3,2,1
+%Falcon,3,3,2,1
+%Poodle,3,3,2,1
+%Beetle,3,3,2,1
+%; primarily animal,dmg,armor,food,qty
+%Coyote,3,3,2,1
+%Cougar,3,3,2,1
+%Feline,3,3,2,1
+%Spider,3,3,2,1
+%Gerbil,3,3,2,1
+%Collie,3,3,2,1
+%Bobcat,3,3,2,1
+%Parrot,3,3,2,1
+%Raptor,3,3,2,1
+%Ferret,1,3,0,1
+%Canine,1,3,0,1
+%Skunk,3,3,2,1
+%Robot,3,3,2,1
+%Panda,3,3,2,1
+%Stork,3,3,2,1
+%Otter,3,3,2,1
+%Corgi,3,3,2,1
+%Pooch,3,3,2,1
+%Llama,3,3,2,1
+%Lemur,3,3,2,1
+%Snake,3,3,2,1
+%Koala,3,3,2,1
+%Bunny,3,3,2,1
+%Kitty,3,3,2,1
+%Puppy,3,3,2,1
+%Doggy,3,3,2,1
+%Hyena,3,3,2,1
+%Hound,3,3,2,1
+%Raven,3,3,2,1
+%Hippo,3,3,2,1
+%Heron,3,3,2,1
+%Rhino,3,3,2,1
+%Whale,3,3,2,1
+%; primarily animal,dmg,armor,food,qty
+%Sheep,3,3,2,1
+%Shark,3,3,2,1
+%Golem,3,3,2,1
+%Gecko,3,3,2,1
+%Gator,3,3,2,1
+%Camel,3,3,2,1
+%Zebra,3,3,2,1
+%Frog,3,3,2,1
+%Worm,3,3,2,1
+%Wolf,3,3,2,1
+%Goat,3,3,2,1
+%Puma,3,3,2,1
+%Gull,3,3,2,1
+%Hare,3,3,2,1
+%Dove,3,3,2,1
+%Boar,3,3,2,1
+%Mule,3,3,2,1
+%Bird,3,3,2,1
+%Sumo,3,3,2,1
+%Swan,3,3,2,1
+%Bear,3,3,2,1
+%Deer,3,3,2,1
+%Lynx,3,3,2,1
+%Lion,3,3,2,1
+%Toad,3,3,2,1
+%Bee,3,3,2,1
+%Fox,3,3,2,1
+%Cow,3,3,2,1
+%Rat,3,3,2,1
+%Owl,3,3,2,1
+%Pup,3,3,2,1
+%; primarily animal,dmg,armor,food,qty
+%Dog,3,3,2,1
+%Pug,3,3,2,1
+%Cat,3,3,2,1
+%Pig,3,3,2,1
+%Hog,3,3,2,1
+%Elk,3,3,2,1
+
+
+
+
+
+; script used to generate main list
+; j::
+; loop, parse, clipboard, `n, `r
+; {
+; 	www:=rand(0,5)
+; 	aaa:=rand(0,5)
+; 	fff:=rand(0,5)
+; 	qty:=rand(1,3)
+; 	if (inStr(A_LoopField, "!")) ; weapon
+; 		  www:=(rand()<10) ? rand(23, 50) : (rand()<45) ? rand(10, 23) : rand(5, 10)
+; 		, aaa:=(rand()<10) ? rand(10, 20) : (rand()<20) ? rand(5, 10)  : (rand()<80) ? rand(5, 10) : rand(-5, -1)
+; 		, fff:=(rand()<10) ? rand(-12, -20) : (rand()<40) ? rand(-3, -12) : rand(-3, 0)
+; 		, qty:=1
+; 	if (inStr(A_LoopField, "@")) ; armor
+; 		  www:=(rand()<10) ? rand(12, 30) : (rand()<50) ? rand(4, 12)   : rand(1, 3)
+; 		, aaa:=(rand()<10) ? rand(30, 50) : (rand()<45) ? rand(15, 30) : rand(5, 15)
+; 		, fff:=(rand()<10) ? rand(-12, -20) : (rand()<40) ? rand(-1, -10) : rand(-1, 0)
+; 		, qty:=1
+; 	if (inStr(A_LoopField, "#")) ; food
+; 		  www:=(rand()<10) ? rand(10, 35) : (rand()<30) ? rand(3, 10)  : rand(0, 3)
+; 		, aaa:=(rand()<10) ? rand(10, 20) : (rand()<30) ? rand(3, 5)   : (rand()<80) ? rand(0, 3)  : rand(-5, -1)
+; 		, fff:=(rand()<10) ? rand(20, 35) : (rand()<45) ? rand(10, 20) : (rand()<90) ? rand(5, 10) : rand(-15, -1)
+; 		, qty:=rand(1,8)
+; 	if (inStr(A_LoopField, "$")) ; misc
+; 		  www:=(rand()<10) ? rand(15, 20) : (rand()<45) ? rand(7, 15)  : rand(0, 7)
+; 		, aaa:=(rand()<10) ? rand(20, 35) : (rand()<45) ? rand(10, 20) : (rand()<80) ? rand(5, 10) : rand(-8, -1)
+; 		, fff:=(rand()<10) ? rand(15, 20) : (rand()<45) ? rand(7, 15)  : (rand()<80) ? rand(1, 7)  : rand(-8, -1)
+; 		, qty:=rand(1,3)
+; 	if (inStr(A_LoopField, "%")) ; animals
+; 		  www:=(rand()<10) ? rand(15, 25) : (rand()<45) ? rand(8, 15)  : rand(5, 8)
+; 		, aaa:=(rand()<10) ? rand(20, 35) : (rand()<45) ? rand(10, 20) : rand(5, 10)
+; 		, fff:=(rand()<10) ? rand(15, 20) : (rand()<45) ? rand(7, 15)  : (rand()<80) ? rand(1, 7)  : rand(-8, -1)
+; 		, qty:=rand(1,3)
+
+; 	name:=regExReplace(A_LoopField, "\s\d")
+; 	out.=substr(name,2) "," www "," aaa "," fff "," qty "`n"
+; }
+; clipboard:=out
+; soundBeep
+
+
+
+
+
+
+; ; primarily weapons,dmg,armor,food,qty
+; Cellular Phone,3,1,0,1
+; Ping Pong Ball,3,1,0,1
+; Remote Control,3,1,0,1
+; Sledgehammer,3,1,0,1
+; Watering Pot,3,1,0,1
+; Funnel Cloud,3,1,0,1
+; Electric Fan,3,1,0,1
+; Mobile Phone,3,1,0,1
+; Rolling Pin,3,1,0,1
+; Scaffolding,3,1,0,1
+; Screwdriver,3,1,0,1
+; Martial Art,3,1,0,1
+; Firecracker,3,1,0,1
+; Wine Bottle,3,1,0,1
+; Hockey Puck,3,1,0,1
+; Coffee Mug,3,1,0,1
+; Microphone,3,1,0,1
+; Typewriter,3,1,0,1
+; Projectile,3,1,0,1
+; Snowmobile,3,1,0,1
+; Ammunition,3,1,0,1
+; ; primarily weapons,dmg,armor,food,qty
+; Smartphone,3,1,0,1
+; Scattergun,3,1,0,1
+; Lawn Mower,3,1,0,1
+; Sculpture,3,1,0,1
+; Detergent,3,1,0,1
+; Tableware,3,1,0,1
+; Saxophone,3,1,0,1
+; Telephone,3,1,0,1
+; Bulldozer,3,1,0,1
+; Timepiece,3,1,0,1
+; Golf Club,3,1,0,1
+; Lightbulb,3,1,0,1
+; Golf Ball,3,1,0,1
+; Ice Skate,3,1,0,1
+; Lightning,3,1,0,1
+; Barracuda,3,1,0,1
+; Power Saw,3,1,0,1
+; Cellphone,3,1,0,1
+; Chain Saw,3,1,0,1
+; Polka Dot,3,1,0,1
+; Pitchfork,3,1,0,1
+; Structure,3,1,0,1
+; Piggybank,3,1,0,1
+; Pie Chart,3,1,0,1
+; ; primarily weapons,dmg,armor,food,qty
+; Stopwatch,3,1,0,1
+; Metal Saw,3,1,0,1
+; Paintball,3,1,0,1
+; Microwave,3,1,0,1
+; Blowtorch,3,1,0,1
+; Appliance,3,1,0,1
+; Xylophone,3,1,0,1
+; Accordion,3,1,0,1
+; Cogwheel,3,1,0,1
+; Payphone,3,1,0,1
+; Clarinet,3,1,0,1
+; Revolver,3,1,0,1
+; Sandpile,3,1,0,1
+; Saucepan,3,1,0,1
+; Jerrycan,3,1,0,1
+; Snowball,3,1,0,1
+; Softball,3,1,0,1
+; Sparkler,3,1,0,1
+; Dumbbell,3,1,0,1
+; Blizzard,3,1,0,1
+; Hack Saw,3,1,0,1
+; Trombone,3,1,0,1
+; Firework,3,1,0,1
+; Flagpole,3,1,0,1
+; ; primarily weapons,dmg,armor,food,qty
+; Wildfire,3,1,0,1
+; Woodwind,3,1,0,1
+; Football,3,1,0,1
+; Caliper,3,1,0,1
+; Bonfire,3,1,0,1
+; Flipper,3,1,0,1
+; Firearm,3,1,0,1
+; Blender,3,1,0,1
+; Antenna,3,1,0,1
+; Canteen,3,1,0,1
+; Sandbag,3,1,0,1
+; Monocle,3,1,0,1
+; Plunger,3,1,0,1
+; Spatula,3,1,0,1
+; Tankard,3,1,0,1
+; Crowbar,3,1,0,1
+; Backhoe,3,1,0,1
+; Mailbox,3,1,0,1
+; Shotgun,3,1,0,1
+; Beehive,3,1,0,1
+; Handbag,3,1,0,1
+; Luggage,3,1,0,1
+; Handgun,3,1,0,1
+; Baggage,3,1,0,1
+; Cyclone,3,1,0,1
+; ; primarily weapons,dmg,armor,food,qty
+; Toolbox,3,1,0,1
+; Rattler,3,1,0,1
+; Ratchet,3,1,0,1
+; Skillet,3,1,0,1
+; Hydrant,3,1,0,1
+; Rainbow,3,1,0,1
+; Printer,3,1,0,1
+; Tornado,3,1,0,1
+; Pry Bar,3,1,0,1
+; Barbell,3,1,0,1
+; Lantern,3,1,0,1
+; Trumpet,3,1,0,1
+; Ukulele,3,1,0,1
+; Putter,3,1,0,1
+; Racket,3,1,0,1
+; Pulley,3,1,0,1
+; Trophy,3,1,0,1
+; Ladder,3,1,0,1
+; Tripod,3,1,0,1
+; Domino,3,1,0,1
+; Violin,3,1,0,1
+; Hammer,3,1,0,1
+; Shovel,3,1,0,1
+; Crutch,3,1,0,1
+; ; primarily weapons,dmg,armor,food,qty
+; Rocket,3,1,0,1
+; Mallet,3,1,0,1
+; Guitar,3,1,0,1
+; Faucet,3,1,0,1
+; Teapot,3,1,0,1
+; Teacup,3,1,0,1
+; Grater,3,1,0,1
+; Mirror,3,1,0,1
+; Goblet,3,1,0,1
+; Fiddle,3,1,0,1
+; Bottle,3,1,0,1
+; Gadget,3,1,0,1
+; Wrench,3,1,0,1
+; Frigid,3,1,0,1
+; Petrol,3,1,0,1
+; Kettle,3,1,0,1
+; Stool,3,1,0,1
+; Clown,3,1,0,1
+; Storm,3,1,0,1
+; Straw,3,1,0,1
+; Clamp,3,1,0,1
+; Block,3,1,0,1
+; Spoon,3,1,0,1
+; Blade,3,1,0,1
+; Conch,3,1,0,1
+; ; primarily weapons,dmg,armor,food,qty
+; Sword,3,1,0,1
+; Money,3,1,0,1
+; Poker,3,1,0,1
+; Chair,3,1,0,1
+; Chain,3,1,0,1
+; Spade,3,1,0,1
+; Cello,3,1,0,1
+; Magic,3,1,0,1
+; Light,3,1,0,1
+; Torch,3,1,0,1
+; Lathe,3,1,0,1
+; Ladle,3,1,0,1
+; Truck,3,1,0,1
+; Knife,3,1,0,1
+; Pylon,3,1,0,1
+; Viola,3,1,0,1
+; Drone,3,1,0,1
+; Sieve,3,1,0,1
+; Watch,3,1,0,1
+; Dryer,3,1,0,1
+; Rifle,3,1,0,1
+; Ember,3,1,0,1
+; Wheel,3,1,0,1
+; ; primarily weapons,dmg,armor,food,qty
+; Shear,3,1,0,1
+; Grave,3,1,0,1
+; Grail,3,1,0,1
+; Anvil,3,1,0,1
+; Globe,3,1,0,1
+; Winch,3,1,0,1
+; Flame,3,1,0,1
+; Flare,3,1,0,1
+; Flute,3,1,0,1
+; Cable,3,1,0,1
+; Fork,3,1,0,1
+; Sand,3,1,0,1
+; Sack,3,1,0,1
+; Fire,3,1,0,1
+; Wood,3,1,0,1
+; Sign,3,1,0,1
+; Wire,3,1,0,1
+; Gear,3,1,0,1
+; Rake,3,1,0,1
+; Rain,3,1,0,1
+; Puck,3,1,0,1
+; Harp,3,1,0,1
+; Ball,3,1,0,1
+; Pole,3,1,0,1
+; Hook,3,1,0,1
+; ; primarily weapons,dmg,armor,food,qty
+; Horn,3,1,0,1
+; Club,3,1,0,1
+; Tuba,3,1,0,1
+; Lava,3,1,0,1
+; Cord,3,1,0,1
+; Tape,3,1,0,1
+; Lego,3,1,0,1
+; Bell,3,1,0,1
+; Dial,3,1,0,1
+; Tool,3,1,0,1
+; Cube,3,1,0,1
+; Cup,3,1,0,1
+; Sax,3,1,0,1
+; Saw,3,1,0,1
+; Mop,3,1,0,1
+; Mug,3,1,0,1
+; Oar,3,1,0,1
+; Ski,3,1,0,1
+; Orb,3,1,0,1
+; Key,3,1,0,1
+; Pan,3,1,0,1
+; Jug,3,1,0,1
+; Jar,3,1,0,1
+; Bar,3,1,0,1
+; Axe,3,1,0,1
+; ; primarily weapons,dmg,armor,food,qty
+; Ice,3,1,0,1
+; Pot,3,1,0,1
+; HIV,3,1,0,1
+; ; primarily armors,dmg,armor,food,qty
+; Ten-Gallon Hat,1,3,0,1
+; Chopping Board,1,3,0,1
+; Jack-O-Lantern,1,3,0,1
+; Cardboard Box,1,3,0,1
+; Cutting Board,1,3,0,1
+; Warning Sign,1,3,0,1
+; Refrigerator,1,3,0,1
+; Wedding Gown,1,3,0,1
+; Boogie Board,1,3,0,1
+; Rollerblade,1,3,0,1
+; Life Jacket,1,3,0,1
+; Feather Boa,1,3,0,1
+; Bungee Cord,1,3,0,1
+; Street Sign,1,3,0,1
+; Whiteboard,1,3,0,1
+; Cowboy Hat,1,3,0,1
+; Blackboard,1,3,0,1
+; Chalkboard,1,3,0,1
+; Pocketbook,1,3,0,1
+; Dart Board,1,3,0,1
+; Teddy Bear,1,3,0,1
+; Semi Truck,1,3,0,1
+; Scarecrow,1,3,0,1
+; ; primarily armors,dmg,armor,food,qty
+; Turntable,1,3,0,1
+; Billboard,1,3,0,1
+; Black Tie,1,3,0,1
+; Headphone,1,3,0,1
+; Pine Tree,1,3,0,1
+; Body Suit,1,3,0,1
+; Paper Bag,1,3,0,1
+; Straw Hat,1,3,0,1
+; Blindfold,1,3,0,1
+; Clothing,1,3,0,1
+; Magazine,1,3,0,1
+; Pit Bull,1,3,0,1
+; Placemat,1,3,0,1
+; Cat Suit,1,3,0,1
+; Calendar,1,3,0,1
+; ; primarily armors,dmg,armor,food,qty
+; Lab Coat,1,3,0,1
+; Sombrero,1,3,0,1
+; Headgear,1,3,0,1
+; Earphone,1,3,0,1
+; Gym Shoe,1,3,0,1
+; Swimwear,1,3,0,1
+; Textbook,1,3,0,1
+; Toolbelt,1,3,0,1
+; Felt Hat,1,3,0,1
+; Wardrobe,1,3,0,1
+; Backpack,1,3,0,1
+; Footwear,1,3,0,1
+; Garment,1,3,0,1
+; ; primarily armors,dmg,armor,food,qty
+; Necktie,1,3,0,1
+; Rowboat,1,3,0,1
+; Earmuff,1,3,0,1
+; Hardhat,1,3,0,1
+; Bedding,1,3,0,1
+; Top Hat,1,3,0,1
+; Snowman,1,3,0,1
+; Leotard,1,3,0,1
+; Bulldog,1,3,0,1
+; Sneaker,1,3,0,1
+; Unitard,1,3,0,1
+; Jewelry,1,3,0,1
+; ; primarily armors,dmg,armor,food,qty
+; Slipper,1,3,0,1
+; Tuxedo,1,3,0,1
+; Turban,1,3,0,1
+; Python,1,3,0,1
+; Kimono,1,3,0,1
+; Barrel,1,3,0,1
+; Jacket,1,3,0,1
+; Beanie,1,3,0,1
+; Diaper,1,3,0,1
+; Beaver,1,3,0,1
+; Icebox,1,3,0,1
+; Tophat,1,3,0,1
+; Hubcap,1,3,0,1
+; Wallet,1,3,0,1
+; Helmet,1,3,0,1
+; Bucket,1,3,0,1
+; ; primarily armors,dmg,armor,food,qty
+; Saddle,1,3,0,1
+; Fedora,1,3,0,1
+; Poncho,1,3,0,1
+; Bowtie,1,3,0,1
+; Carton,1,3,0,1
+; Mitten,1,3,0,1
+; Sandal,1,3,0,1
+; Sunhat,1,3,0,1
+; Wreath,1,3,0,1
+; ; primarily armors,dmg,armor,food,qty
+; Cloak,1,3,0,1
+; Nappy,1,3,0,1
+; Table,1,3,0,1
+; Crate,1,3,0,1
+; Crown,1,3,0,1
+; Tiara,1,3,0,1
+; Denim,1,3,0,1
+; Kayak,1,3,0,1
+; Hijab,1,3,0,1
+; ; primarily armors,dmg,armor,food,qty
+; Shawl,1,3,0,1
+; Apron,1,3,0,1
+; Glove,1,3,0,1
+; Scarf,1,3,0,1
+; Beret,1,3,0,1
+; Sari,1,3,0,1
+; Cape,1,3,0,1
+; Shoe,1,3,0,1
+; Garb,1,3,0,1
+; Robe,1,3,0,1
+; ; primarily armors,dmg,armor,food,qty
+; Gong,1,3,0,1
+; Sock,1,3,0,1
+; Polo,1,3,0,1
+; Bowl,1,3,0,1
+; Boot,1,3,0,1
+; Book,1,3,0,1
+; Kilt,1,3,0,1
+; Suit,1,3,0,1
+; Tray,1,3,0,1
+; Cuff,1,3,0,1
+; ; primarily armors,dmg,armor,food,qty
+; Lei,1,3,0,1
+; Bib,1,3,0,1
+; Tux,1,3,0,1
+; Bag,1,3,0,1
+; Tie,1,3,0,1
+; Bra,1,3,0,1
+; Hat,1,3,0,1
+; ; primarily foods,dmg,armor,food,qty
+; Grilled Chicken,1,0,3,4
+; Tomato Ketchup,1,0,3,4
+; Monitor Lizard,1,0,3,4
+; Sunflower Seed,1,0,3,4
+; Chocolate Chip,1,0,3,4
+; Peanut Butter,1,0,3,4
+; Frozen Yogurt,1,0,3,4
+; Birthday Cake,1,0,3,4
+; Whipped Cream,1,0,3,4
+; Fried Chicken,1,0,3,4
+; Pocket Bread,1,0,3,4
+; Gingerbread,1,0,3,4
+; Caterpillar,1,0,3,4
+; Cauliflower,1,0,3,4
+; Green Onion,1,0,3,4
+; Bell Pepper,1,0,3,4
+; Potato Chip,1,0,3,4
+; Pomegranate,1,0,3,4
+; White Bread,1,0,3,4
+; Coffee Bean,1,0,3,4
+; Apple Sauce,1,0,3,4
+; Spring Roll,1,0,3,4
+; Frankfurter,1,0,3,4
+; Cooking Oil,1,0,3,4
+; ; primarily foods,dmg,armor,food,qty
+; Cornflower,1,0,3,4
+; Strawberry,1,0,3,4
+; White Wine,1,0,3,4
+; Lunch Meat,1,0,3,4
+; Watermelon,1,0,3,4
+; Blackberry,1,0,3,4
+; Sour Cream,1,0,3,4
+; Sugar Cube,1,0,3,4
+; Vegetation,1,0,3,4
+; Grapefruit,1,0,3,4
+; Cantaloupe,1,0,3,4
+; Green Bean,1,0,3,4
+; Candy Cane,1,0,3,4
+; Sauerkraut,1,0,3,4
+; Jellybean,1,0,3,4
+; Butterfly,1,0,3,4
+; Guacamole,1,0,3,4
+; Sunflower,1,0,3,4
+; Dandelion,1,0,3,4
+; Carnation,1,0,3,4
+; Bubblegum,1,0,3,4
+; Ice Cream,1,0,3,4
+; Vegetable,1,0,3,4
+; Soy Sauce,1,0,3,4
+; Dragonfly,1,0,3,4
+; ; primarily foods,dmg,armor,food,qty
+; Starfruit,1,0,3,4
+; Macadamia,1,0,3,4
+; Chocolate,1,0,3,4
+; Fruitcake,1,0,3,4
+; Pineapple,1,0,3,4
+; Margarita,1,0,3,4
+; Cranberry,1,0,3,4
+; Pepperoni,1,0,3,4
+; Artichoke,1,0,3,4
+; Blueberry,1,0,3,4
+; Millipede,1,0,3,4
+; Cold Meat,1,0,3,4
+; Fried Egg,1,0,3,4
+; Condiment,1,0,3,4
+; Bean Curd,1,0,3,4
+; Hamburger,1,0,3,4
+; Omelette,1,0,3,4
+; Medicine,1,0,3,4
+; Meatloaf,1,0,3,4
+; Crabmeat,1,0,3,4
+; Meatball,1,0,3,4
+; Marigold,1,0,3,4
+; Pine Nut,1,0,3,4
+; Cinnamon,1,0,3,4
+; Cilantro,1,0,3,4
+; ; primarily foods,dmg,armor,food,qty
+; Mackerel,1,0,3,4
+; Cucumber,1,0,3,4
+; Lollipop,1,0,3,4
+; Zucchini,1,0,3,4
+; Red Wine,1,0,3,4
+; Daffodil,1,0,3,4
+; Sandwich,1,0,3,4
+; Lemonade,1,0,3,4
+; Jalapeno,1,0,3,4
+; Smoothie,1,0,3,4
+; Icecream,1,0,3,4
+; Broccoli,1,0,3,4
+; Doughnut,1,0,3,4
+; Honeydew,1,0,3,4
+; Stir Fry,1,0,3,4
+; Dumpling,1,0,3,4
+; Egg Yolk,1,0,3,4
+; Eggplant,1,0,3,4
+; Habanero,1,0,3,4
+; Beverage,1,0,3,4
+; Beetroot,1,0,3,4
+; Teriyaki,1,0,3,4
+; Tortilla,1,0,3,4
+; Barnacle,1,0,3,4
+; Flapjack,1,0,3,4
+; ; primarily foods,dmg,armor,food,qty
+; Seafood,1,0,3,4
+; Calzone,1,0,3,4
+; Yoghurt,1,0,3,4
+; Pancake,1,0,3,4
+; Coconut,1,0,3,4
+; Scallop,1,0,3,4
+; Pierogi,1,0,3,4
+; Oatmeal,1,0,3,4
+; Spinach,1,0,3,4
+; Seaweed,1,0,3,4
+; Gelatin,1,0,3,4
+; Strudel,1,0,3,4
+; Sardine,1,0,3,4
+; Platter,1,0,3,4
+; Apricot,1,0,3,4
+; Tapioca,1,0,3,4
+; Cracker,1,0,3,4
+; Tequila,1,0,3,4
+; Avocado,1,0,3,4
+; Martini,1,0,3,4
+; Popcorn,1,0,3,4
+; Cabbage,1,0,3,4
+; Brownie,1,0,3,4
+; Halibut,1,0,3,4
+; Baklava,1,0,3,4
+; ; primarily foods,dmg,armor,food,qty
+; Cupcake,1,0,3,4
+; Rhubarb,1,0,3,4
+; Caramel,1,0,3,4
+; Poultry,1,0,3,4
+; Burrito,1,0,3,4
+; Hotcake,1,0,3,4
+; Lettuce,1,0,3,4
+; Vinegar,1,0,3,4
+; Pretzel,1,0,3,4
+; Pudding,1,0,3,4
+; Pumpkin,1,0,3,4
+; Ketchup,1,0,3,4
+; Turnip,1,0,3,4
+; Kimchi,1,0,3,4
+; Urchin,1,0,3,4
+; Barley,1,0,3,4
+; Veggie,1,0,3,4
+; Banana,1,0,3,4
+; Burger,1,0,3,4
+; Hotdog,1,0,3,4
+; Celery,1,0,3,4
+; Waffle,1,0,3,4
+; Carrot,1,0,3,4
+; Tomato,1,0,3,4
+; Liquor,1,0,3,4
+; ; primarily foods,dmg,armor,food,qty
+; Durian,1,0,3,4
+; Potato,1,0,3,4
+; Butter,1,0,3,4
+; Fajita,1,0,3,4
+; Brandy,1,0,3,4
+; Cereal,1,0,3,4
+; Salami,1,0,3,4
+; Salmon,1,0,3,4
+; Mojito,1,0,3,4
+; Cookie,1,0,3,4
+; Muffin,1,0,3,4
+; Ginger,1,0,3,4
+; Cherry,1,0,3,4
+; Garlic,1,0,3,4
+; Wonton,1,0,3,4
+; Almond,1,0,3,4
+; Sprout,1,0,3,4
+; Orchid,1,0,3,4
+; Coffee,1,0,3,4
+; Pickle,1,0,3,4
+; Scarab,1,0,3,4
+; Clover,1,0,3,4
+; Yogurt,1,0,3,4
+; Papaya,1,0,3,4
+; Fondue,1,0,3,4
+; ; primarily foods,dmg,armor,food,qty
+; Peanut,1,0,3,4
+; Peach,1,0,3,4
+; Steak,1,0,3,4
+; Booze,1,0,3,4
+; Pecan,1,0,3,4
+; Cocoa,1,0,3,4
+; Onion,1,0,3,4
+; Cider,1,0,3,4
+; Nacho,1,0,3,4
+; Pizza,1,0,3,4
+; Plant,1,0,3,4
+; Berry,1,0,3,4
+; Syrup,1,0,3,4
+; Melon,1,0,3,4
+; Tater,1,0,3,4
+; Crepe,1,0,3,4
+; Bread,1,0,3,4
+; Mango,1,0,3,4
+; Thyme,1,0,3,4
+; Curry,1,0,3,4
+; Lemon,1,0,3,4
+; Kabob,1,0,3,4
+; Juice,1,0,3,4
+; Jello,1,0,3,4
+; Donut,1,0,3,4
+; ; primarily foods,dmg,armor,food,qty
+; Ramen,1,0,3,4
+; Vodka,1,0,3,4
+; Drink,1,0,3,4
+; Honey,1,0,3,4
+; Bagel,1,0,3,4
+; Wheat,1,0,3,4
+; Guppy,1,0,3,4
+; Bacon,1,0,3,4
+; Gravy,1,0,3,4
+; Salad,1,0,3,4
+; Grape,1,0,3,4
+; Sauce,1,0,3,4
+; Candy,1,0,3,4
+; Fruit,1,0,3,4
+; Acorn,1,0,3,4
+; Scone,1,0,3,4
+; Cake,1,0,3,4
+; Yolk,1,0,3,4
+; Flan,1,0,3,4
+; Seed,1,0,3,4
+; Salt,1,0,3,4
+; Rice,1,0,3,4
+; Carp,1,0,3,4
+; Wine,1,0,3,4
+; Grub,1,0,3,4
+; ; primarily foods,dmg,armor,food,qty
+; Cell,1,0,3,4
+; Soda,1,0,3,4
+; Pork,1,0,3,4
+; Soup,1,0,3,4
+; Herb,1,0,3,4
+; Plum,1,0,3,4
+; Pita,1,0,3,4
+; Chip,1,0,3,4
+; Clam,1,0,3,4
+; Spud,1,0,3,4
+; Pear,1,0,3,4
+; Stew,1,0,3,4
+; Java,1,0,3,4
+; Kale,1,0,3,4
+; Kelp,1,0,3,4
+; Tuna,1,0,3,4
+; Bean,1,0,3,4
+; Corn,1,0,3,4
+; Milk,1,0,3,4
+; Taco,1,0,3,4
+; Leek,1,0,3,4
+; Crab,1,0,3,4
+; Meat,1,0,3,4
+; Meal,1,0,3,4
+; Mead,1,0,3,4
+; ; primarily foods,dmg,armor,food,qty
+; Beet,1,0,3,4
+; Mayo,1,0,3,4
+; Beer,1,0,3,4
+; Lime,1,0,3,4
+; Tofu,1,0,3,4
+; Beef,1,0,3,4
+; Food,1,0,3,4
+; Rum,1,0,3,4
+; Tea,1,0,3,4
+; Fig,1,0,3,4
+; Nut,1,0,3,4
+; Koi,1,0,3,4
+; Oat,1,0,3,4
+; Pea,1,0,3,4
+; Pie,1,0,3,4
+; Egg,1,0,3,4
+; Pop,1,0,3,4
+; Ham,1,0,3,4
+; ; primarily misc,dmg,armor,food,qty
+; Computer Monitor,3,1,0,1
+; Hot Air Balloon,2,2,2,1
+; Piano Accordion,2,2,2,1
+; Vacuum Cleaner,2,2,2,1
+; Microwave Oven,2,2,2,1
+; Action Figure,2,2,2,1
+; Control Stick,2,2,2,1
+; Candle Holder,2,2,2,1
+; Shopping Bag,2,2,2,1
+; Sailing Boat,2,2,2,1
+; Rubber Stamp,2,2,2,1
+; Prairie Dog,2,2,2,1
+; Hummingbird,2,2,2,1
+; Sticky Note,2,2,2,1
+; Contraption,2,2,2,1
+; Woodpecker,2,2,2,1
+; Whirlybird,2,2,2,1
+; Maple Tree,2,2,2,1
+; Chinchilla,2,2,2,1
+; Chandelier,2,2,2,1
+; Pomeranian,2,2,2,1
+; Video Game,2,2,2,1
+; Skateboard,2,2,2,1
+; Calculator,2,2,2,1
+; Scrapbook,2,2,2,1
+; ; primarily misc,dmg,armor,food,qty
+; Life Buoy,2,2,2,1
+; Snowboard,2,2,2,1
+; Treadmill,2,2,2,1
+; Generator,2,2,2,1
+; Spiderweb,2,2,2,1
+; Sprinkler,2,2,2,1
+; Checkbook,2,2,2,1
+; Whirligig,2,2,2,1
+; Stoplight,2,2,2,1
+; Streetcar,2,2,2,1
+; Oak Tree,2,2,2,1
+; Colander,2,2,2,1
+; Ornament,2,2,2,1
+; Painting,2,2,2,1
+; Cupboard,2,2,2,1
+; Building,2,2,2,1
+; Handcuff,2,2,2,1
+; Stroller,2,2,2,1
+; Tricycle,2,2,2,1
+; Umbrella,2,2,2,1
+; Armchair,2,2,2,1
+; Monument,2,2,2,1
+; Fountain,2,2,2,1
+; Forklift,2,2,2,1
+; Scooter,2,2,2,1
+; ; primarily misc,dmg,armor,food,qty
+; Ottoman,2,2,2,1
+; Picture,2,2,2,1
+; Origami,2,2,2,1
+; Gamepad,2,2,2,1
+; Bouquet,2,2,2,1
+; Garland,2,2,2,1
+; Sundial,2,2,2,1
+; Bicycle,2,2,2,1
+; Placard,2,2,2,1
+; Cabinet,2,2,2,1
+; Sequoia,2,2,2,1
+; Termite,2,2,2,1
+; Machine,2,2,2,1
+; Hammock,2,2,2,1
+; Balloon,2,2,2,1
+; Redwood,2,2,2,1
+; Receipt,2,2,2,1
+; Drawing,2,2,2,1
+; Voucher,2,2,2,1
+; Lattice,2,2,2,1
+; Trolley,2,2,2,1
+; Battery,2,2,2,1
+; Puzzle,2,2,2,1
+; Dinghy,2,2,2,1
+; Beacon,2,2,2,1
+; ; primarily misc,dmg,armor,food,qty
+; Keypad,2,2,2,1
+; Puddle,2,2,2,1
+; Record,2,2,2,1
+; Toilet,2,2,2,1
+; Ribbon,2,2,2,1
+; Throne,2,2,2,1
+; Plaque,2,2,2,1
+; Willow,2,2,2,1
+; Spigot,2,2,2,1
+; Candle,2,2,2,1
+; Spring,2,2,2,1
+; Pillar,2,2,2,1
+; Camera,2,2,2,1
+; Cobweb,2,2,2,1
+; Flower,2,2,2,1
+; Bongo,2,2,2,1
+; Booth,2,2,2,1
+; Patio,2,2,2,1
+; Phone,2,2,2,1
+; Piano,2,2,2,1
+; Stove,2,2,2,1
+; Clock,2,2,2,1
+; Chime,2,2,2,1
+; Plate,2,2,2,1
+; Chart,2,2,2,1
+; ; primarily misc,dmg,armor,food,qty
+; Couch,2,2,2,1
+; Pouch,2,2,2,1
+; Snail,2,2,2,1
+; Tulip,2,2,2,1
+; Slide,2,2,2,1
+; Wagon,2,2,2,1
+; Shrub,2,2,2,1
+; Water,2,2,2,1
+; Grill,2,2,2,1
+; Graph,2,2,2,1
+; Canoe,2,2,2,1
+; Gizmo,2,2,2,1
+; Sedan,2,2,2,1
+; Gauge,2,2,2,1
+; Yacht,2,2,2,1
+; Scope,2,2,2,1
+; Cage,2,2,2,1
+; Yarn,2,2,2,1
+; Seat,2,2,2,1
+; Flag,2,2,2,1
+; Shed,2,2,2,1
+; Card,2,2,2,1
+; Silo,2,2,2,1
+; Sled,2,2,2,1
+; Fern,2,2,2,1
+; ; primarily misc,dmg,armor,food,qty
+; Snow,2,2,2,1
+; Cart,2,2,2,1
+; Bulb,2,2,2,1
+; Sofa,2,2,2,1
+; Drum,2,2,2,1
+; Pine,2,2,2,1
+; Door,2,2,2,1
+; Dome,2,2,2,1
+; Doll,2,2,2,1
+; Coal,2,2,2,1
+; Kiln,2,2,2,1
+; Coin,2,2,2,1
+; Kite,2,2,2,1
+; Dice,2,2,2,1
+; Bike,2,2,2,1
+; Lamp,2,2,2,1
+; Moth,2,2,2,1
+; Tree,2,2,2,1
+; Moon,2,2,2,1
+; Tent,2,2,2,1
+; Lily,2,2,2,1
+; Tire,2,2,2,1
+; Map,2,2,2,1
+; Car,2,2,2,1
+; Ant,2,2,2,1
+; ; primarily misc,dmg,armor,food,qty
+; Mud,2,2,2,1
+; Sun,2,2,2,1
+; Oak,2,2,2,1
+; Tub,2,2,2,1
+; Keg,2,2,2,1
+; Urn,2,2,2,1
+; Ivy,2,2,2,1
+; Web,2,2,2,1
+; TV,3,1,0,1
+; ; primarily animal,dmg,armor,food,qty
+; Hoofed Mammal,3,3,2,1
+; Mountain Lion,3,3,2,1
+; Greyhound,3,3,2,1
+; Dalmatian,3,3,2,1
+; Tarantula,3,3,2,1
+; Centipede,3,3,2,1
+; Chameleon,3,3,2,1
+; Chihuahua,3,3,2,1
+; Porcupine,3,3,2,1
+; Crocodile,3,3,2,1
+; Wild Boar,3,3,2,1
+; Alligator,3,3,2,1
+; Parakeet,3,3,2,1
+; Reindeer,3,3,2,1
+; Sea Gull,3,3,2,1
+; Kangaroo,3,3,2,1
+; Sheepdog,3,3,2,1
+; Squirrel,3,3,2,1
+; Stingray,3,3,2,1
+; Hedgehog,3,3,2,1
+; Elephant,3,3,2,1
+; Gargoyle,3,3,2,1
+; Arachnid,3,3,2,1
+; ; primarily animal,dmg,armor,food,qty
+; Flamingo,3,3,2,1
+; Scorpion,3,3,2,1
+; Pelican,3,3,2,1
+; Penguin,3,3,2,1
+; Pitbull,3,3,2,1
+; Sealion,3,3,2,1
+; Giraffe,3,3,2,1
+; Cheetah,3,3,2,1
+; Serpent,3,3,2,1
+; Sparrow,3,3,2,1
+; Terrier,3,3,2,1
+; Reptile,3,3,2,1
+; Caribou,3,3,2,1
+; Vulture,3,3,2,1
+; Leopard,3,3,2,1
+; Dolphin,3,3,2,1
+; Raccoon,3,3,2,1
+; Peacock,3,3,2,1
+; Turtle,3,3,2,1
+; Rabbit,3,3,2,1
+; Kitten,3,3,2,1
+; Puffin,3,3,2,1
+; Iguana,3,3,2,1
+; Toucan,3,3,2,1
+; Donkey,3,3,2,1
+; Lizard,3,3,2,1
+; Rodent,3,3,2,1
+; Mammal,3,3,2,1
+; Falcon,3,3,2,1
+; Poodle,3,3,2,1
+; Beetle,3,3,2,1
+; ; primarily animal,dmg,armor,food,qty
+; Coyote,3,3,2,1
+; Cougar,3,3,2,1
+; Feline,3,3,2,1
+; Spider,3,3,2,1
+; Gerbil,3,3,2,1
+; Collie,3,3,2,1
+; Bobcat,3,3,2,1
+; Parrot,3,3,2,1
+; Raptor,3,3,2,1
+; Ferret,1,3,0,1
+; Canine,1,3,0,1
+; Skunk,3,3,2,1
+; Robot,3,3,2,1
+; Panda,3,3,2,1
+; Stork,3,3,2,1
+; Otter,3,3,2,1
+; Corgi,3,3,2,1
+; Pooch,3,3,2,1
+; Llama,3,3,2,1
+; Lemur,3,3,2,1
+; Snake,3,3,2,1
+; Koala,3,3,2,1
+; Bunny,3,3,2,1
+; Kitty,3,3,2,1
+; Puppy,3,3,2,1
+; Doggy,3,3,2,1
+; Hyena,3,3,2,1
+; Hound,3,3,2,1
+; Raven,3,3,2,1
+; Hippo,3,3,2,1
+; Heron,3,3,2,1
+; Rhino,3,3,2,1
+; Whale,3,3,2,1
+; ; primarily animal,dmg,armor,food,qty
+; Sheep,3,3,2,1
+; Shark,3,3,2,1
+; Golem,3,3,2,1
+; Gecko,3,3,2,1
+; Gator,3,3,2,1
+; Camel,3,3,2,1
+; Zebra,3,3,2,1
+; Frog,3,3,2,1
+; Worm,3,3,2,1
+; Wolf,3,3,2,1
+; Goat,3,3,2,1
+; Puma,3,3,2,1
+; Gull,3,3,2,1
+; Hare,3,3,2,1
+; Dove,3,3,2,1
+; Boar,3,3,2,1
+; Mule,3,3,2,1
+; Bird,3,3,2,1
+; Sumo,3,3,2,1
+; Swan,3,3,2,1
+; Bear,3,3,2,1
+; Deer,3,3,2,1
+; Lynx,3,3,2,1
+; Lion,3,3,2,1
+; Toad,3,3,2,1
+; Bee,3,3,2,1
+; Fox,3,3,2,1
+; Cow,3,3,2,1
+; Rat,3,3,2,1
+; Owl,3,3,2,1
+; Pup,3,3,2,1
+; ; primarily animal,dmg,armor,food,qty
+; Dog,3,3,2,1
+; Pug,3,3,2,1
+; Cat,3,3,2,1
+; Pig,3,3,2,1
+; Hog,3,3,2,1
+; Elk,3,3,2,1

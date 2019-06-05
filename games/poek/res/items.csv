@@ -1,0 +1,928 @@
+; primarily weapons,dmg,armor,food,qty,type
+Cellular Phone,3,1,-4,1,!
+Ping Pong Ball,1,0,0,1,!
+Remote Control,3,1,-4,1,!
+Sledgehammer,20,5,-5,1,!
+Watering Pot,3,1,-2,1,!
+Funnel Cloud,5,5,0,1,!
+Electric Fan,7,5,-3,1,!
+Mobile Phone,3,1,-4,1,!
+Rolling Pin,5,2,-3,1,!
+Scaffolding,8,1,-4,1,!
+Screwdriver,10,0,-3,1,!
+Martial Art,9,8,0,1,!
+Firecracker,6,-4,-8,1,!
+Wine Bottle,6,-4,-2,1,!
+Hockey Puck,5,2,-1,1,!
+Coffee Mug,5,-4,-2,1,!
+Microphone,5,1,-4,1,!
+Typewriter,7,3,-7,1,!
+Projectile,8,0,-3,1,!
+Snowmobile,20,8,-20,1,!
+Ammunition,2,0,0,1,!
+; primarily weapons,dmg,armor,food,qty,type
+Smartphone,3,1,-4,1,!
+Scattergun,24,1,-4,1,!
+Lawn Mower,8,5,-12,1,!
+Sculpture,4,5,-5,1,!
+Detergent,3,0,-3,1,!
+Tableware,3,1,0,1,!
+Saxophone,4,3,-2,1,!
+Telephone,3,1,-3,1,!
+Bulldozer,30,30,-231,1,!
+Timepiece,2,1,-1,1,!
+Golf Club,9,1,-3,1,!
+Lightbulb,2,1,-2,1,!
+Golf Ball,2,1,-5,1,!
+Ice Skate,12,1,-10,1,!
+Lightning,110,-280,-222,1,!
+Barracuda,4,1,20,1,!
+Power Saw,25,3,-30,1,!
+Cellphone,3,1,-3,1,!
+Chain Saw,25,10,-40,1,!
+Polka Dot,1,1,1,1,!
+Pitchfork,13,1,-3,1,!
+Structure,8,4,-5,1,!
+Piggybank,2,1,-4,1,!
+Pie Chart,2,0,3,1,!
+; primarily weapons,dmg,armor,food,qty,type
+Stopwatch,3,1,-1,1,!
+Metal Saw,24,12,-8,1,!
+Paintball,1,0,0,1,!
+Microwave,17,15,-7,1,!
+Blowtorch,22,-10,-12,1,!
+Appliance,12,12,-8,1,!
+Xylophone,8,8,-3,1,!
+Accordion,8,3,-1,1,!
+Cogwheel,3,2,0,1,!
+Payphone,4,1,-5,1,!
+Clarinet,8,1,-3,1,!
+Revolver,60,1,-5,1,!
+Sandpile,5,5,0,1,!
+Saucepan,9,8,-4,1,!
+Jerrycan,5,2,-3,1,!
+Snowball,1,0,2,1,!
+Softball,3,2,-3,1,!
+Sparkler,2,0,-9,1,!
+Dumbbell,16,3,-22,1,!
+Blizzard,21,0,0,1,!
+Hack Saw,24,2,-8,1,!
+Trombone,12,3,-8,1,!
+Firework,9,0,-12,1,!
+Flagpole,12,3,-7,1,!
+; primarily weapons,dmg,armor,food,qty,type
+Wildfire,24,0,-27,1,!
+Woodwind,5,1,-5,1,!
+Football,6,1,-2,1,!
+Caliper,2,1,-3,1,!
+Bonfire,16,0,-13,1,!
+Flipper,5,1,0,1,!
+Firearm,50,1,-5,1,!
+Blender,13,1,-8,1,!
+Antenna,6,0,0,1,!
+Canteen,6,3,-3,1,!
+Sandbag,12,12,-11,1,!
+Monocle,1,0,-2,1,!
+Plunger,4,0,-13,1,!
+Spatula,4,1,-4,1,!
+Tankard,5,3,-3,1,!
+Crowbar,18,2,0,1,!
+Backhoe,50,33,-172,1,!
+Mailbox,7,3,-9,1,!
+Shotgun,70,3,-11,1,!
+Beehive,13,-5,-30,1,!
+Handbag,5,2,-3,1,!
+Luggage,7,3,-2,1,!
+Handgun,46,1,-12,1,!
+Baggage,7,3,-5,1,!
+Cyclone,32,23,0,1,!
+; primarily weapons,dmg,armor,food,qty,type
+Toolbox,14,8,-10,1,!
+Rattler,6,1,-2,1,!
+Ratchet,10,4,-10,1,!
+Skillet,17,9,-3,1,!
+Hydrant,16,10,-13,1,!
+Rainbow,7,4,0,1,!
+Printer,15,12,-25,1,!
+Tornado,10,9,0,1,!
+Pry Bar,33,1,-24,1,!
+Barbell,31,2,-12,1,!
+Lantern,7,1,-4,1,!
+Trumpet,8,3,-5,1,!
+Ukulele,6,1,-1,1,!
+Putter,15,1,-3,1,!
+Racket,5,1,-3,1,!
+Pulley,5,1,-1,1,!
+Trophy,3,3,-1,1,!
+Ladder,3,0,-1,1,!
+Tripod,5,0,-4,1,!
+Domino,1,0,0,1,!
+Violin,5,4,-2,1,!
+Hammer,23,7,-22,1,!
+Shovel,32,11,-29,1,!
+Crutch,16,2,-13,1,!
+; primarily weapons,dmg,armor,food,qty,type
+Rocket,36,-8,-25,1,!
+Mallet,34,7,-15,1,!
+Guitar,17,2,-4,1,!
+Faucet,5,1,-5,1,!
+Teapot,3,1,-4,1,!
+Teacup,3,1,-2,1,!
+Grater,3,2,-2,1,!
+Mirror,11,-4,-15,1,!
+Goblet,3,2,-4,1,!
+Fiddle,5,2,-2,1,!
+Bottle,9,-2,-1,1,!
+Gadget,7,2,-3,1,!
+Wrench,11,3,-4,1,!
+Petrol,1,0,-11,1,!
+Kettle,4,2,-4,1,!
+Stool,7,2,-3,1,!
+Storm,13,0,0,1,!
+Straw,1,0,0,1,!
+Clamp,6,3,-1,1,!
+Block,11,8,-4,1,!
+Spoon,2,1,-2,1,!
+Blade,14,1,-7,1,!
+Conch,11,3,-13,1,!
+; primarily weapons,dmg,armor,food,qty,type
+Sword,26,4,-14,1,!
+Money,10,0,-2,1,!
+Poker,16,1,-13,1,!
+Chair,5,4,-3,1,!
+Chain,11,1,-5,1,!
+Spade,33,20,-14,1,!
+Cello,6,3,-2,1,!
+Magic,15,15,3,1,!
+Light,2,0,0,1,!
+Torch,16,-4,-18,1,!
+Lathe,10,15,-87,1,!
+Ladle,5,1,-3,1,!
+Truck,30,24,-85,1,!
+Knife,16,1,-11,1,!
+Pylon,7,1,-4,1,!
+Viola,5,1,-4,1,!
+Drone,4,0,-5,1,!
+Sieve,2,1,-3,1,!
+Watch,2,1,-2,1,!
+Dryer,14,13,-24,1,!
+Rifle,55,3,-7,1,!
+Ember,13,-9,-22,1,!
+Wheel,4,13,-14,1,!
+; primarily weapons,dmg,armor,food,qty,type
+Shear,7,3,-3,1,!
+Grave,5,7,-6,1,!
+Grail,15,15,-5,1,!
+Anvil,7,3,-6,1,!
+Globe,3,3,-4,1,!
+Winch,6,-6,-20,1,!
+Flame,15,-11,-24,1,!
+Flare,13,-11,-27,1,!
+Flute,3,1,-3,1,!
+Cable,4,1,-6,1,!
+Fork,4,1,-4,1,!
+Sand,2,1,-2,1,!
+Sack,1,1,0,1,!
+Fire,18,-13,-26,1,!
+Wood,8,6,-3,1,!
+Sign,6,5,-5,1,!
+Wire,2,0,-10,1,!
+Gear,2,7,-4,1,!
+Rake,4,1,-5,1,!
+Rain,0,0,2,1,!
+Puck,5,1,-1,1,!
+Harp,6,3,-6,1,!
+Ball,2,1,-1,1,!
+Pole,9,8,-8,1,!
+Hook,3,-3,-7,1,!
+; primarily weapons,dmg,armor,food,qty,type
+Horn,3,2,-3,1,!
+Club,6,4,-5,1,!
+Tuba,6,5,-8,1,!
+Lava,200,-200,-200,1,!
+Cord,2,0,-1,1,!
+Tape,0,0,0,1,!
+Lego,1,0,-1,1,!
+Bell,2,1,-1,1,!
+Dial,0,1,-1,1,!
+Ice,14,-10,1,1,!
+Cube,2,1,-1,1,!
+Cup,1,1,-1,1,!
+Sax,5,4,-6,1,!
+Saw,10,4,-12,1,!
+Mop,1,1,-2,1,!
+Mug,1,1,-1,1,!
+Oar,12,5,-5,1,!
+Ski,4,3,-5,1,!
+Orb,3,1,10,1,!
+Key,1,1,-2,1,!
+Pan,7,7,-3,1,!
+Jug,3,3,2,1,!
+Jar,2,2,-3,1,!
+Bar,6,3,-5,1,!
+Axe,22,10,-20,1,!
+; primarily weapons,dmg,armor,food,qty,type
+Pot,7,7,-4,1,!
+HIV,6,-17,-30,1,!
+; primarily armors,dmg,armor,food,qty,type
+Ten-Gallon Hat,0,3,0,1,@
+Cutting Board,2,5,-2,1,@
+Jack-O-Lantern,0,2,4,1,@
+Cardboard Box,0,0,1,1,@
+Warning Sign,5,8,-5,1,@
+Refrigerator,3,25,-20,1,@
+Wedding Gown,0,3,-1,1,@
+Boogie Board,1,2,-1,1,@
+Rollerblade,6,3,-4,1,@
+Life Jacket,0,12,-2,1,@
+Feather Boa,0,0,3,1,@
+Bungee Cord,1,3,-2,1,@
+Street Sign,5,8,-5,1,@
+Whiteboard,4,12,-7,1,@
+Cowboy Hat,0,3,0,1,@
+Blackboard,4,14,-7,1,@
+Chalkboard,4,13,-8,1,@
+Pocketbook,0,1,0,1,@
+Dart Board,2,7,-2,1,@
+Teddy Bear,0,1,2,1,@
+Semi Truck,34,27,-96,1,@
+Scarecrow,0,4,6,1,@
+; primarily armors,dmg,armor,food,qty,type
+Turntable,3,5,-15,1,@
+Billboard,4,24,-65,1,@
+Black Tie,0,1,0,1,@
+Headphone,2,2,-1,1,@
+Pine Tree,1,10,8,1,@
+Body Suit,0,3,-3,1,@
+Paper Bag,0,0,1,1,@
+Straw Hat,1,2,2,1,@
+Blindfold,0,-8,-1,1,@
+Clothing,0,1,1,1,@
+Magazine,1,2,3,1,@
+Placemat,0,1,0,1,@
+Cat Suit,1,3,-4,1,@
+Calendar,1,2,2,1,@
+; primarily armors,dmg,armor,food,qty,type
+Lab Coat,0,2,1,1,@
+Sombrero,2,3,0,1,@
+Headgear,0,1,-1,1,@
+Earphone,0,0,-1,1,@
+Gym Shoes,1,2,-3,1,@
+Swimwear,0,1,1,1,@
+Textbook,3,5,4,1,@
+Toolbelt,2,3,-2,1,@
+Felt Hat,0,0,1,1,@
+Wardrobe,6,12,-15,1,@
+Backpack,2,4,-3,1,@
+Footwear,1,2,-3,1,@
+; primarily armors,dmg,armor,food,qty,type
+Necktie,0,1,0,1,@
+Rowboat,8,18,-16,1,@
+Earmuff,0,1,-1,1,@
+Hardhat,3,8,-6,1,@
+Bedding,0,2,-1,1,@
+Top Hat,0,3,0,1,@
+Snowman,0,4,3,1,@
+Leotard,0,0,1,1,@
+Sneaker,1,2,-3,1,@
+Unitard,0,0,1,1,@
+Jewelry,2,0,0,1,@
+; primarily armors,dmg,armor,food,qty,type
+Slipper,0,1,-2,1,@
+Tuxedo,0,1,-2,1,@
+Turban,0,2,-2,1,@
+Kimono,0,1,-1,1,@
+Barrel,5,5,-8,1,@
+Jacket,0,2,-3,1,@
+Beanie,0,1,-1,1,@
+Diaper,1,2,-7,1,@
+Icebox,1,2,-2,1,@
+Tophat,0,1,0,1,@
+Hubcap,5,5,-9,1,@
+Wallet,0,2,-1,1,@
+Helmet,3,6,-4,1,@
+Bucket,3,5,-4,1,@
+; primarily armors,dmg,armor,food,qty,type
+Saddle,3,8,-2,1,@
+Fedora,0,2,-3,1,@
+Poncho,0,1,-2,1,@
+Bowtie,0,1,-1,1,@
+Carton,0,1,-2,1,@
+Mitten,0,1,-1,1,@
+Sandal,1,1,-3,1,@
+Sunhat,0,1,-1,1,@
+Wreath,2,2,-4,1,@
+; primarily armors,dmg,armor,food,qty,type
+Cloak,0,1,-1,1,@
+Nappy,0,1,-2,1,@
+Table,8,17,-10,1,@
+Crate,7,15,-6,1,@
+Crown,6,3,-9,1,@
+Tiara,3,1,-5,1,@
+Denim,1,1,-2,1,@
+Kayak,15,8,-12,1,@
+Hijab,0,1,-2,1,@
+; primarily armors,dmg,armor,food,qty,type
+Shawl,0,2,-2,1,@
+Apron,0,1,-2,1,@
+Glove,1,2,-3,1,@
+Scarf,0,1,-2,1,@
+Beret,0,1,-1,1,@
+Sari,0,1,-1,1,@
+Cape,0,1,-1,1,@
+Shoe,3,2,-5,1,@
+Garb,0,1,-4,1,@
+Robe,0,1,-3,1,@
+; primarily armors,dmg,armor,food,qty,type
+Gong,7,15,-14,1,@
+Sock,0,1,-1,1,@
+Polo,0,1,-1,1,@
+Bowl,3,3,-3,1,@
+Boot,3,2,-5,1,@
+Book,2,3,-2,1,@
+Kilt,0,1,-2,1,@
+Suit,0,1,-2,1,@
+Tray,2,3,-4,1,@
+Cuff,0,1,-1,1,@
+; primarily armors,dmg,armor,food,qty,type
+Lei,0,1,-1,1,@
+Bib,0,1,-2,1,@
+Tux,0,1,-2,1,@
+Bag,0,1,-3,1,@
+Tie,0,1,-1,1,@
+Bra,0,1,-3,1,@
+Hat,0,1,-2,1,@
+; primarily foods,dmg,armor,food,qty,type
+Grilled Chicken,2,0,13,1,#
+Tomato Ketchup,1,0,3,3,#
+Sunflower Seed,0,0,2,10,#
+Chocolate Chip,0,0,2,10,#
+Peanut Butter,4,0,4,5,#
+Frozen Yogurt,1,0,3,3,#
+Birthday Cake,2,0,6,1,#
+Whipped Cream,6,0,3,3,#
+Fried Chicken,5,0,13,1,#
+Pocket Bread,2,0,5,2,#
+Gingerbread,5,0,2,2,#
+Cauliflower,6,0,1,7,#
+Green Onion,3,0,1,5,#
+Bell Pepper,1,0,1,3,#
+Potato Chip,4,0,3,7,#
+Pomegranate,6,0,3,3,#
+White Bread,5,0,3,3,#
+Coffee Bean,2,0,2,3,#
+Apple Sauce,3,0,5,3,#
+Spring Roll,1,0,5,3,#
+Frankfurter,1,0,12,3,#
+Cooking Oil,7,0,-4,3,#
+; primarily foods,dmg,armor,food,qty,type
+Cornflower,0,0,2,3,#
+Strawberry,0,0,4,4,#
+White Wine,1,0,-1,2,#
+Lunch Meat,3,0,11,4,#
+Watermelon,11,3,9,1,#
+Blackberry,1,0,3,4,#
+Sour Cream,0,0,1,5,#
+Sugar Cube,0,0,1,5,#
+Vegetation,1,3,2,3,#
+Grapefruit,7,4,5,1,#
+Cantaloupe,6,4,6,2,#
+Green Bean,1,0,1,11,#
+Candy Cane,2,0,2,3,#
+Sauerkraut,1,0,3,12,#
+Jellybean,0,0,2,7,#
+Guacamole,1,0,2,4,#
+Sunflower,1,0,1,1,#
+Dandelion,0,0,1,3,#
+Carnation,0,0,1,3,#
+Bubblegum,1,-1,4,4,#
+Ice Cream,1,0,5,3,#
+Vegetable,1,0,6,3,#
+Soy Sauce,1,0,2,7,#
+; --------------------------------------------------------------------
+; --------------------------------------------------------------------
+; --- FROM THIS POINT ON WAS GENERATED AUTOMATICALLY AND IS FLAWED ---
+; --------------------------------------------------------------------
+; --------------------------------------------------------------------
+; primarily foods,dmg,armor,food,qty,type
+Starfruit,0,0,24,1,#
+Macadamia,1,-4,10,2,#
+Chocolate,6,2,7,5,#
+Fruitcake,0,4,12,2,#
+Pineapple,2,0,9,4,#
+Margarita,18,2,15,4,#
+Cranberry,16,-3,30,2,#
+Pepperoni,3,-2,10,2,#
+Artichoke,0,0,9,3,#
+Blueberry,12,0,14,6,#
+Millipede,3,0,13,2,#
+Cold,10,3,11,3,#
+Fried,3,3,14,4,#
+Condiment,1,-3,16,2,#
+Bean,28,2,12,3,#
+Hamburger,22,3,12,5,#
+Omelette,6,-1,20,4,#
+Medicine,5,0,9,1,#
+Meatloaf,1,-2,7,1,#
+Crabmeat,10,2,5,2,#
+Meatball,9,3,20,5,#
+Marigold,3,2,17,2,#
+Pine,27,3,7,6,#
+Cinnamon,3,3,11,1,#
+Cilantro,1,14,7,6,#
+; primarily foods,dmg,armor,food,qty,type
+Mackerel,8,0,-6,1,#
+Cucumber,3,1,16,4,#
+Lollipop,6,1,13,4,#
+Zucchini,0,1,17,6,#
+Red,10,5,28,2,#
+Daffodil,5,5,-3,6,#
+Sandwich,7,0,19,3,#
+Lemonade,9,-1,18,6,#
+Jalapeno,4,2,6,1,#
+Smoothie,3,3,10,1,#
+Icecream,0,1,-9,2,#
+Broccoli,0,-4,10,1,#
+Doughnut,21,3,7,3,#
+Honeydew,0,-4,32,4,#
+Stir,0,2,19,2,#
+Dumpling,1,0,12,1,#
+Egg,20,-1,6,3,#
+Eggplant,0,5,30,5,#
+Habanero,2,1,11,5,#
+Beverage,8,1,31,4,#
+Beetroot,2,-3,19,1,#
+Teriyaki,1,13,6,4,#
+Tortilla,3,0,20,4,#
+Barnacle,7,0,5,3,#
+Flapjack,16,4,7,4,#
+; primarily foods,dmg,armor,food,qty,type
+Seafood,2,5,22,1,#
+Calzone,2,0,6,4,#
+Yoghurt,3,-2,24,1,#
+Pancake,10,2,7,2,#
+Coconut,1,1,6,3,#
+Scallop,0,4,30,2,#
+Pierogi,0,3,18,5,#
+Oatmeal,5,5,6,6,#
+Spinach,0,2,5,5,#
+Seaweed,3,3,17,4,#
+Gelatin,1,0,-9,1,#
+Strudel,3,3,9,1,#
+Sardine,0,2,8,3,#
+Platter,0,1,8,6,#
+Apricot,0,3,5,1,#
+Tapioca,8,0,6,4,#
+Cracker,2,5,6,5,#
+Tequila,3,-4,15,4,#
+Avocado,2,1,10,4,#
+Martini,3,0,14,1,#
+Popcorn,2,2,5,5,#
+Cabbage,2,4,18,1,#
+Brownie,0,4,12,5,#
+Halibut,3,1,9,3,#
+Baklava,8,-3,22,6,#
+; primarily foods,dmg,armor,food,qty,type
+Cupcake,1,5,18,3,#
+Rhubarb,3,1,8,2,#
+Caramel,0,3,8,1,#
+Poultry,9,4,10,1,#
+Burrito,5,0,10,1,#
+Hotcake,0,-2,10,6,#
+Lettuce,3,3,15,5,#
+Vinegar,3,5,10,5,#
+Pretzel,4,5,16,3,#
+Pudding,0,4,28,4,#
+Pumpkin,0,4,6,6,#
+Ketchup,0,4,25,5,#
+Turnip,0,0,28,2,#
+Kimchi,1,3,15,6,#
+Urchin,0,3,13,1,#
+Barley,1,3,17,2,#
+Veggie,7,12,10,4,#
+Banana,0,3,9,6,#
+Burger,5,3,-15,3,#
+Hotdog,1,18,7,2,#
+Celery,0,11,6,3,#
+Waffle,2,3,5,2,#
+Carrot,2,3,5,3,#
+Tomato,25,3,17,1,#
+Liquor,10,2,10,6,#
+; primarily foods,dmg,armor,food,qty,type
+Durian,10,1,19,5,#
+Potato,1,3,-8,6,#
+Butter,2,5,5,2,#
+Fajita,2,3,6,4,#
+Brandy,0,-5,14,6,#
+Cereal,2,2,6,5,#
+Salami,1,3,9,6,#
+Salmon,3,4,-9,4,#
+Mojito,3,-1,17,4,#
+Cookie,8,4,30,5,#
+Muffin,3,-3,10,6,#
+Ginger,2,3,12,2,#
+Cherry,3,0,18,1,#
+Garlic,2,4,12,1,#
+Wonton,1,1,6,4,#
+Almond,1,2,10,1,#
+Sprout,0,3,10,4,#
+Orchid,3,2,5,3,#
+Coffee,2,3,7,5,#
+Pickle,1,5,16,5,#
+Scarab,0,13,-11,2,#
+Clover,1,1,12,6,#
+Yogurt,5,3,17,1,#
+Papaya,9,-2,10,2,#
+Fondue,0,2,-2,1,#
+; primarily foods,dmg,armor,food,qty,type
+Peanut,2,0,13,5,#
+Peach,2,16,20,2,#
+Steak,0,0,13,2,#
+Booze,3,20,35,2,#
+Pecan,13,17,8,2,#
+Cocoa,5,2,10,4,#
+Onion,2,5,15,3,#
+Cider,3,2,5,3,#
+Nacho,0,2,14,2,#
+Pizza,0,0,6,6,#
+Plant,3,1,20,2,#
+Berry,0,1,35,5,#
+Syrup,7,2,10,1,#
+Melon,0,3,13,2,#
+Tater,3,3,8,1,#
+Crepe,0,2,-12,6,#
+Bread,3,1,9,5,#
+Mango,0,15,9,6,#
+Thyme,3,3,9,3,#
+Curry,2,4,15,3,#
+Lemon,1,2,5,5,#
+Kabob,3,3,14,2,#
+Juice,1,12,10,5,#
+Jello,1,4,10,5,#
+Donut,0,2,9,3,#
+; primarily foods,dmg,armor,food,qty,type
+Ramen,5,3,18,3,#
+Vodka,8,-1,5,5,#
+Drink,3,3,18,6,#
+Honey,0,3,8,6,#
+Bagel,1,2,32,3,#
+Wheat,3,3,18,4,#
+Guppy,1,-3,19,3,#
+Bacon,0,1,12,1,#
+Gravy,5,5,10,2,#
+Salad,4,0,14,2,#
+Grape,1,3,11,5,#
+Sauce,2,3,24,5,#
+Candy,2,3,19,4,#
+Fruit,3,1,8,2,#
+Acorn,28,4,15,4,#
+Scone,6,0,6,4,#
+Cake,3,16,7,3,#
+Yolk,6,-2,31,6,#
+Flan,1,3,12,1,#
+Seed,3,-1,10,1,#
+Salt,10,0,13,2,#
+Rice,2,5,19,5,#
+Carp,1,2,19,1,#
+Wine,0,14,9,5,#
+Grub,3,3,6,5,#
+; primarily foods,dmg,armor,food,qty,type
+Cell,0,4,21,3,#
+Soda,2,5,14,4,#
+Pork,2,5,20,5,#
+Soup,0,5,11,1,#
+Herb,2,3,8,1,#
+Plum,3,-1,11,3,#
+Pita,2,15,18,4,#
+Chip,1,1,5,1,#
+Clam,3,13,8,2,#
+Spud,1,3,19,3,#
+Pear,1,4,12,3,#
+Stew,2,4,7,4,#
+Java,0,0,5,4,#
+Kale,3,3,22,3,#
+Kelp,26,4,22,4,#
+Tuna,10,3,14,5,#
+Bean,3,-4,9,2,#
+Corn,3,5,12,5,#
+Milk,0,-4,9,2,#
+Taco,1,-2,-9,3,#
+Leek,1,-3,5,1,#
+Crab,0,4,10,4,#
+Meat,4,3,10,1,#
+Meal,3,1,5,6,#
+Mead,3,4,-4,4,#
+; primarily foods,dmg,armor,food,qty,type
+Beet,1,1,11,6,#
+Mayo,7,1,30,5,#
+Beer,5,2,12,4,#
+Lime,3,5,-15,5,#
+Tofu,3,3,6,3,#
+Beef,0,2,9,6,#
+Food,1,-1,6,3,#
+Rum,2,1,13,4,#
+Tea,3,12,10,5,#
+Fig,6,-2,5,4,#
+Nut,1,-3,35,5,#
+Koi,6,1,12,1,#
+Oat,32,1,5,1,#
+Pea,2,13,13,6,#
+Pie,5,3,20,6,#
+Egg,1,0,16,4,#
+Pop,0,3,19,6,#
+Ham,9,0,-15,6,#
+; primarily misc,dmg,armor,food,qty,type
+Computer,0,11,3,3,$
+Hot,13,5,7,3,$
+Piano,13,10,6,1,$
+Vacuum,3,16,9,2,$
+Microwave,16,18,1,1,$
+Control,14,8,9,3,$
+Candle,2,17,-3,1,$
+Sailing,1,17,7,3,$
+Rubber,19,19,2,3,$
+Prairie,0,10,10,3,$
+Hummingbird,12,16,12,2,$
+Sticky,15,18,10,1,$
+Contraption,4,25,-3,3,$
+Woodpecker,1,-3,12,2,$
+Whirlybird,1,33,9,3,$
+Maple,13,5,2,1,$
+Chinchilla,12,16,3,3,$
+Chandelier,2,10,4,1,$
+Video,17,8,11,2,$
+Skateboard,3,30,8,1,$
+Calculator,2,5,15,1,$
+Scrapbook,7,7,11,3,$
+; primarily misc,dmg,armor,food,qty,type
+Life,0,80,80,1,$
+Snowboard,11,10,-8,3,$
+Treadmill,13,14,13,3,$
+Generator,15,-7,-1,1,$
+Spiderweb,8,19,1,2,$
+Sprinkler,5,16,7,3,$
+Checkbook,7,18,12,1,$
+Whirligig,13,19,13,2,$
+Stoplight,7,19,-3,1,$
+Streetcar,13,12,-3,2,$
+Oak,15,5,1,1,$
+Colander,2,10,4,3,$
+Ornament,14,6,-4,1,$
+Painting,6,5,13,3,$
+Cupboard,5,9,3,3,$
+Building,6,10,4,2,$
+Handcuff,15,5,7,3,$
+Stroller,7,10,8,1,$
+Tricycle,12,20,2,1,$
+Umbrella,10,12,4,3,$
+Armchair,2,14,7,3,$
+Monument,12,12,9,1,$
+Fountain,1,11,13,1,$
+Forklift,13,-1,4,1,$
+Scooter,8,-1,13,2,$
+; primarily misc,dmg,armor,food,qty,type
+Ottoman,9,10,6,1,$
+Picture,10,16,12,1,$
+Origami,14,8,6,2,$
+Gamepad,0,17,6,2,$
+Bouquet,15,8,-2,3,$
+Garland,11,6,-4,2,$
+Sundial,12,17,7,3,$
+Bicycle,15,14,8,2,$
+Placard,12,15,4,3,$
+Cabinet,6,9,8,2,$
+Sequoia,0,7,9,3,$
+Termite,11,7,14,2,$
+Machine,4,14,-2,3,$
+Hammock,4,13,4,2,$
+Balloon,0,17,3,1,$
+Redwood,13,15,1,1,$
+Receipt,8,5,2,2,$
+Drawing,1,10,14,3,$
+Voucher,8,34,17,3,$
+Lattice,4,17,7,3,$
+Trolley,8,16,6,2,$
+Battery,10,10,12,1,$
+Puzzle,3,19,4,3,$
+Dinghy,16,19,7,3,$
+Beacon,11,19,14,2,$
+; primarily misc,dmg,armor,food,qty,type
+Keypad,1,11,5,2,$
+Puddle,7,8,17,3,$
+Record,2,-2,6,2,$
+Toilet,11,14,1,3,$
+Ribbon,5,-7,15,3,$
+Throne,10,6,8,3,$
+Plaque,3,16,19,3,$
+Willow,15,11,19,2,$
+Spigot,7,11,6,3,$
+Candle,9,19,17,3,$
+Spring,3,5,7,2,$
+Pillar,14,11,4,2,$
+Camera,11,-7,-5,1,$
+Cobweb,5,-5,9,2,$
+Flower,14,18,3,2,$
+Bongo,5,17,7,2,$
+Booth,6,17,2,2,$
+Patio,3,-4,7,1,$
+Phone,9,8,3,2,$
+Piano,3,6,10,1,$
+Stove,13,5,12,1,$
+Clock,3,33,4,2,$
+Chime,16,9,8,2,$
+Plate,2,-1,2,1,$
+Chart,15,21,15,2,$
+; primarily misc,dmg,armor,food,qty,type
+Couch,9,7,13,3,$
+Pouch,2,10,10,2,$
+Snail,2,12,7,3,$
+Tulip,1,30,16,3,$
+Slide,9,13,15,1,$
+Wagon,16,24,14,3,$
+Shrub,5,12,1,3,$
+Water,9,24,3,3,$
+Grill,7,15,10,2,$
+Graph,2,35,11,1,$
+Canoe,12,10,5,1,$
+Gizmo,6,14,1,1,$
+Sedan,17,5,12,1,$
+Gauge,13,21,4,3,$
+Yacht,1,11,7,2,$
+Scope,0,7,-6,2,$
+Cage,14,14,7,2,$
+Yarn,7,10,15,2,$
+Seat,3,8,6,2,$
+Flag,12,14,5,1,$
+Shed,0,8,6,1,$
+Card,14,8,-1,2,$
+Silo,6,88,10,3,$
+Sled,9,19,1,1,$
+Fern,2,2,4,3,$
+; primarily misc,dmg,armor,food,qty,type
+Snow,15,8,1,3,$
+Cart,6,10,7,2,$
+Bulb,7,6,11,1,$
+Sofa,18,11,16,3,$
+Drum,14,16,16,3,$
+Pine,8,7,14,2,$
+Door,4,17,15,3,$
+Dome,19,13,13,1,$
+Doll,5,-3,10,1,$
+Coal,3,18,8,1,$
+Kiln,10,14,1,3,$
+Coin,13,14,-2,1,$
+Kite,2,5,-1,3,$
+Dice,3,10,7,1,$
+Bike,12,20,15,2,$
+Lamp,7,21,-7,1,$
+Moth,1,14,2,3,$
+Tree,7,6,5,2,$
+Moon,50,324,14,2,$
+Tent,0,-7,1,1,$
+Lily,2,2,7,3,$
+Tire,14,4,10,3,$
+Map,17,20,15,1,$
+Car,2,24,5,3,$
+Ant,15,7,3,2,$
+; primarily misc,dmg,armor,food,qty,type
+Mud,12,6,15,1,$
+Sun,6,-8,13,3,$
+Oak,3,17,12,3,$
+Tub,6,-4,15,3,$
+Keg,3,16,10,3,$
+Urn,7,6,12,3,$
+Ivy,19,15,12,2,$
+Web,7,8,9,3,$
+TV,14,12,12,2,$
+; primarily animal,dmg,armor,food,qty,type
+Monitor,6,8,10,4,#
+Pomeranian,6,10,15,2,%
+Butterfly,5,9,11,1,%
+Greyhound,13,10,3,1,%
+Dalmatian,12,15,-5,2,%
+Tarantula,20,8,10,2,%
+Centipede,11,27,7,2,%
+Chameleon,3,8,13,1,%
+Chihuahua,12,9,6,2,%
+Porcupine,26,8,10,2,%
+Crocodile,25,22,6,1,%
+Alligator,25,22,9,1,%
+Parakeet,3,3,12,2,%
+Reindeer,20,20,-3,1,%
+Kangaroo,15,5,1,1,%
+Sheepdog,2,5,10,1,%
+Squirrel,3,3,6,1,%
+Stingray,15,5,8,1,%
+Hedgehog,1,8,12,1,%
+Elephant,20,80,50,1,%
+Gargoyle,8,11,4,2,%
+Arachnid,12,2,8,2,%
+; primarily animal,dmg,armor,food,qty,type
+Flamingo,9,5,12,1,%
+Scorpion,8,3,1,2,%
+Bulldog,6,12,11,1,%
+Pelican,9,12,13,2,%
+Penguin,8,15,13,1,%
+Pitbull,18,5,1,1,%
+Sealion,7,6,13,1,%
+Giraffe,18,20,-8,2,%
+Cheetah,25,30,2,1,%
+Serpent,15,10,-2,1,%
+Sparrow,14,2,3,1,%
+Terrier,7,9,-5,1,%
+Reptile,8,3,5,2,%
+Caribou,20,50,-3,2,%
+Vulture,12,7,15,1,%
+Leopard,18,32,4,1,%
+Dolphin,6,16,5,2,%
+Raccoon,7,18,13,2,%
+Peacock,9,5,7,2,%
+Turtle,19,29,12,1,%
+Rabbit,15,8,6,2,%
+Kitten,20,9,1,1,%
+Puffin,5,10,4,1,%
+Iguana,3,5,14,1,%
+Toucan,7,10,11,2,%
+Donkey,14,35,14,1,%
+Lizard,8,9,-4,1,%
+Rodent,2,1,3,1,%
+Python,25,20,15,1,%
+Mammal,8,13,15,1,%
+Falcon,16,3,3,1,%
+Poodle,7,5,8,2,%
+Beetle,8,6,16,1,%
+; primarily animal,dmg,armor,food,qty,type
+Coyote,6,10,6,2,%
+Cougar,26,37,5,1,%
+Feline,15,7,15,1,%
+Spider,8,9,14,2,%
+Gerbil,1,1,15,2,%
+Collie,6,12,-8,1,%
+Bobcat,12,20,15,1,%
+Parrot,6,2,5,1,%
+Raptor,44,59,3,1,%
+Ferret,16,3,7,2,%
+Beaver,12,7,-12,1,@
+Canine,15,26,6,2,%
+Skunk,13,19,15,1,%
+Robot,12,32,11,1,%
+Panda,19,48,17,1,%
+Stork,5,5,14,2,%
+Otter,5,6,5,1,%
+Corgi,6,18,10,2,%
+Pooch,7,13,2,2,%
+Llama,10,37,2,2,%
+Lemur,6,18,1,1,%
+Snake,6,14,5,1,%
+Koala,8,10,13,2,%
+Bunny,8,30,4,1,%
+Kitty,5,16,-8,1,%
+Puppy,4,12,14,1,%
+Doggy,10,26,-5,1,%
+Hyena,27,25,-2,2,%
+Hound,21,11,3,1,%
+Raven,14,16,9,1,%
+Hippo,50,160,-6,2,%
+Heron,12,8,13,2,%
+Rhino,38,110,11,2,%
+Whale,15,900,15,1,%
+; primarily animal,dmg,armor,food,qty,type
+Sheep,6,20,1,1,%
+Shark,29,29,7,2,%
+Golem,27,45,7,2,%
+Gecko,7,11,6,2,%
+Clown,6,45,12,2,%
+Camel,37,67,-6,1,%
+Zebra,26,55,19,2,%
+Frog,1,9,1,1,%
+Worm,1,1,14,1,%
+Wolf,27,59,7,2,%
+Goat,18,78,3,2,%
+Puma,47,65,4,2,%
+Gull,8,15,5,2,%
+Hare,5,9,18,1,%
+Dove,23,16,5,1,%
+Boar,22,79,2,2,%
+Mule,16,60,16,1,%
+Bird,4,12,13,2,%
+Sumo,16,80,-6,1,%
+Swan,8,8,1,1,%
+Bear,100,102,3,2,%
+Deer,18,60,5,1,%
+Lynx,25,50,7,1,%
+Lion,87,150,7,1,%
+Toad,2,2,2,1,%
+Bee,5,7,1,2,%
+Fox,15,25,3,2,%
+Cow,16,80,2,1,%
+Rat,5,3,7,2,%
+Owl,12,9,6,2,%
+Pup,6,9,14,2,%
+; primarily animal,dmg,armor,food,qty,type
+Dog,29,45,-6,1,%
+Pug,18,24,-3,1,%
+Cat,48,27,14,2,%
+Pig,18,67,2,1,%
+Hog,18,69,13,2,%
+Elk,38,104,4,1,%
+Caterpillar,1,0,34,1,#

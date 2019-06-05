@@ -8,11 +8,15 @@
     # - Win
 */
 
+; NOTE : Almost this entire file is #include statements
+;   Keydisable and workaround are really the only exceptions
+
 ;-------------------------------------------------------------------------------
 ;;; KEY DISABLE AND WORKAROUND ;;;
 ;-------------------------------------------------------------------------------
 
     ;CAPSLOCK
+        ;Stops Capslock from sending keycodes past AHK
         CapsLock::
         Return
     
@@ -29,50 +33,73 @@
             return
 
     ;NUMLOCK
+        ; Stop numlock from sending keycodes past AHK
+        Numlock::
+        Return
+
+        ; Stops numlock from turning off
+        SetNumlockState, AlwaysOn
+
+        ; Allow normal numlock toggling via alt+numlock
+        !NumLock::
+            GetKeyState, numstate, NumLock, T ;(T indicates a Toggle. numstate is an arbitrary varible name)
+            if numstate = U
+                SetNumLockState, AlwaysOn
+            else
+                SetNumLockState, AlwaysOff
+            return
 
 ;-------------------------------------------------------------------------------
 ;;; LAYER 0 --- STANDARD HOTKEYS ;;;
 ;-------------------------------------------------------------------------------
 
-    ;Non Layer Shortcuts go here
+        #include %A_ScriptDir%\Scripts\hotkeys\base\base_mod_none.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\base\base_mod_shift.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\base\base_mod_ctrl.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\base\base_mod_alt.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\base\base_mod_os.ahk
+
+        ;-------------------------------------------------------------------------------
+        ; Oddball key options (like hyper + kc)
+        ;-------------------------------------------------------------------------------
+            ;list kc here
+        ;-------------------------------------------------------------------------------   
 
 ;-------------------------------------------------------------------------------
 ;;; LAYER 1 --- CAPSLOCK LAYER ;;;
 ;-------------------------------------------------------------------------------
- #If, GetKeyState("CapsLock", "P") ;CapsLock hotkeys go below
 
-    ;-------------------------------------------------------------------------------
-    ;Base Capslock Shortcuts
-    ;-------------------------------------------------------------------------------
-        ; AHK Functions
-        F4::Reload     ; Reload entire script
-        F12::Suspend   ; Suspends AutoHot Key
+     #If, GetKeyState("CapsLock", "P") ;CapsLock hotkeys go below
+        ;all keys set to nothing if not assigned so that when in that layer i do not accidentally type something
 
-        ;
-
-    ;-------------------------------------------------------------------------------
-    ;OS/WIN modified Capslock Shortcuts ( All shortcuts on this modifier are general windows shortcuts )
-    ;-------------------------------------------------------------------------------
-
-        #p::  Winset, Alwaysontop, , A  ;p for pin
-
-            
-        #m::           ;This will clear extra line breaks from selected text (Source = 1a)
-            temp := clipboardall
-            clipboard :=
-            sendinput ^x
-            clipwait
-            loop parse, clipboard, `n`t, `r%a_space%
-                sendinput % a_loopfield a_space
-            clipboard := temp
-            return
-
-    ;-------------------------------------------------------------------------------
-    ;ALT Modified Capslock Shortcuts
-    ;-------------------------------------------------------------------------------
-
-        ;alt shortcuts go here
+        #include %A_ScriptDir%\Scripts\hotkeys\capslock\caps_mod_none.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\capslock\caps_mod_shift.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\capslock\caps_mod_ctrl.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\capslock\caps_mod_alt.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\capslock\caps_mod_os.ahk
+        ;-------------------------------------------------------------------------------
+        ; Oddball key options (like hyper + kc)
+        ;-------------------------------------------------------------------------------
+            ;list kc here
+        ;-------------------------------------------------------------------------------
+    return
 
 ;-------------------------------------------------------------------------------
 ;;; LAYER 2 --- NUMLOCK LAYER ;;;
 ;-------------------------------------------------------------------------------
+
+    #if, GetKeyState("NumLock", "P") ;Numlock hotkeys go below
+        ;all keys set to nothing if not assigned so that when in that layer i do not accidentally type something
+
+        #include %A_ScriptDir%\Scripts\hotkeys\numlock\num_mod_none.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\numlock\num_mod_shift.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\numlock\num_mod_ctrl.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\numlock\num_mod_alt.ahk
+        #include %A_ScriptDir%\Scripts\hotkeys\numlock\num_mod_os.ahk
+
+        ;-------------------------------------------------------------------------------
+        ; Oddball key options (like hyper + kc)
+        ;-------------------------------------------------------------------------------
+            ;list kc here
+        ;-------------------------------------------------------------------------------
+    return

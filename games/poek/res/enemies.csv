@@ -1,0 +1,106 @@
+; version 1: Tuesday, July 05, 2016
+; created: Tuesday, July 05, 2016
+; by: tidbit
+
+; player [base hp, per-lvl]: [100, 20]
+
+; enemies:
+; instead of evasion and stuff, that's added into the HP.
+; instead of speed and stuff, that's added into the DMG.
+; Why? ...
+; ... If you have 30% more armor/damage reduction, thats basically the same as
+;        having 30% more life. 30% chance to evade means take full damage with
+;        a 30% chance of evading. Which is basically 30% more life. 
+; ... If you attack faster, thats the same as doing a slow attack but a little
+;       bit more. so take base damage (weak? hard?) and increase/decrease a bit
+;       depending on speed.
+
+; HP Examples:
+; --- Is enemy hard to hit? add more HP. (flying, fast, underground, etc)
+; --- Is enemy easy to hit? less HP. (big, slow)
+; --- higher defense or pain tolerance? add more HP.
+; DMG Examples:
+; --- hit slow but hard? medium dmg (because slowness affects damage rate)
+; --- hit fast but weak? medium dmg (because speed affects damage rate)
+; --- hit fast but HARD? high dmg
+
+; only hp and dmg values need to be changed
+; |L = "increase per level"
+;NAME,LVL,HP|L,DMG|L,W,WD,A,AL
+Cow,1,125|32,6|2.06,,0,,0
+Farmer,1,120|40,8|2.65,,0,,0
+Old farmer,1,90|38,5|1.09,,0,,0
+Bat,1,85|35,5|1.84,,0,,0
+Cat,1,80|34,6|2.43,,0,,0
+Pig,1,90|37,4|2.57,,0,,0
+Spider,1,60|22,5|2.93,,0,,0
+Snake,1,50|27,5|2.41,,0,,0
+Mushroom,1,45|23,3|1.50,,0,,0
+Witch,1,100|34,9|3.44,,0,,0
+Wolf,1,90|34,8|2.92,,0,,0
+Bear,1,130|43,7|3.83,,0,,0
+Billy goat,1,80|24,8|4.06,,0,,0
+Mountain goat,1,90|26,8|3.30,,0,,0
+Markhor,1,80|29,7|4.00,,0,,0
+Wild goat,1,75|25,6|2.88,,0,,0
+Alpine goat,1,80|31,7|3.64,,0,,0
+Goat herder,1,110|34,4|2.20,,0,,0
+Prairie dog,1,60|25,2|1.18,,0,,0
+Tall grass,1,30|37,2|1.02,,0,,0
+Coyote,1,80|30,8|2.84,,0,,0
+Bunny,1,80|36,2|1.26,,0,,0
+Cuttle fish,1,40|29,1|1.08,,0,,0
+Lion,1,170|62,8|3.67,,0,,0
+Antelope,1,120|44,6|2.53,,0,,0
+Zebra,1,120|32,6|3.12,,0,,0
+Elephant,1,600|69,3|4.27,,0,,0
+Rhino,1,400|47,7|4.20,,0,,0
+;NAME,LVL,HP|L,DMG|L,W,WD,A,AL
+Poacher,1,40|20,2|2.88,,0,,0
+Tourist,1,30|26,3|1.83,,0,,0
+Hippo,1,450|57,5|4.70,,0,,0
+Tiger,1,180|52,9|4.87,,0,,0
+Panther,1,170|49,8|4.29,,0,,0
+Pointy vines,1,25|33,4|1.09,,0,,0
+Natives,1,150|46,8|2.12,,0,,0
+Insect,1,20|36,5|1.92,,0,,0
+Tall alien,1,75|30,3|1.86,,0,,0
+Green alien,1,80|37,6|1.57,,0,,0
+Gray alien,1,90|35,8|1.45,,0,,0
+Big Brother,1,90|18,1|2.00,,0,,0
+Comet,1,220|55,8|5.6,,0,,0
+Nothing,1,300|25,0|1.81,,0,,0
+Hipster,1,50|45,3|1.10,,0,,0
+Muffin,1,50|24,3|1.92,,0,,0
+Gangsta,1,130|41,8|2.14,,0,,0
+Creeper,1,80|26,4|2.11,,0,,0
+Businessman,1,80|36,3|1.31,,0,,0
+Old man,1,75|16,3|1.50,,0,,0
+Old woman,1,75|23,3|1.08,,0,,0
+Annoyed teen,1,110|21,7|2.23,,0,,0
+Dog,1,90|33,7|2.07,,0,,0
+Fish,1,60|26,2|1.22,,0,,0
+Toaster,1,90|43,4|1.65,,0,,0
+Chair,1,110|21,6|1.76,,0,,0
+Wood plank,1,60|30,5|1.72,,0,,0
+Mirror,1,30|29,5|2.48,,0,,0
+;NAME,LVL,HP|L,DMG|L,W,WD,A,AL
+Bucket,1,60|41,3|1.78,,0,,0
+Mop,1,60|25,5|1.87,,0,,0
+
+
+
+; code to modify stuff:
+; loop, parse, ddd, `n, `r
+; {
+; 	o:=strSplit(A_LoopField, "|")
+; 	t:=o[1]
+; 	if t is number
+; 		out.=trim(o[1] "|" round(o[2]*rand(1.8,2.8), 0))
+; 	else
+; 		out.=trim(o[1] "|" o[2])
+; 	out.="`n"
+; }
+; soundBeep
+; clipboard:=out
+; exitapp

@@ -4,7 +4,7 @@
 ; Sep 13 2007: Added more misspellings.
 ;              Added fix for -ign -> -ing that ignores words like "sign".
 ;              Added word beginnings/endings sections to cover more options.
-;              Added auto-accents section for words like fiancée, naïve, etc.
+;              Added auto-accents section for words like fiancï¿½e, naï¿½ve, etc.
 ; Feb 28 2007: Added other common misspellings based on MS Word AutoCorrect.
 ;              Added optional auto-correction of 2 consecutive capital letters.
 ; Sep 24 2006: Initial release by Jim Biancolo (http://www.biancolo.com)
@@ -89,7 +89,7 @@ Return
 ; Win+H to enter misspelling correction.  It will be added to this script.
 ;------------------------------------------------------------------------------
 
-Pause::Suspend
+;Pause::Suspend  ;  Pause is handled by another hotkey, will reimplement if i find a way to only suspend certain scripts
 
 #h::
 ; Get the selected text. The clipboard is used instead of "ControlGet Selected"
@@ -4716,12 +4716,12 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 
 ::alot:: a lot
 /*
-:*:cooperat::coöperat
-::(c)::©
-::(r)::®
-::(tm)::™
-::a gogo::à gogo
-::abbe::abbé
+:*:cooperat::coï¿½perat
+::(c)::ï¿½
+::(r)::ï¿½
+::(tm)::ï¿½
+::a gogo::ï¿½ gogo
+::abbe::abbï¿½
 ::accension::accession, ascension
 ::achive::achieve, archive
 ::achived::achieved, archived
@@ -4733,12 +4733,12 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::affort::afford, effort
 ::agin::again, a gin, aging
 ::agina::again, angina
-::ago-go::àgo-go
+::ago-go::ï¿½go-go
 ::aledge::allege, a ledge
 ::alot::a lot, allot
 ::alusion::allusion, illusion
 ::amature::armature, amateur
-::anu::añu
+::anu::aï¿½u
 ::anual::annual, anal
 ::anual::annual, manual
 ::aparent::apparent, a parent
@@ -4756,19 +4756,19 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::behavour::behavior, behaviour
 ::belives::believes, beliefs
 ::boaut::bout, boat, about
-::Bon::Bön
+::Bon::Bï¿½n
 
 ::assasined::assassinated Broken by ":*:assasin::", but no great loss.
-::Bootes::Boötes
-::bric-a-brac::bric-à-brac
+::Bootes::Boï¿½tes
+::bric-a-brac::bric-ï¿½-brac
 ::buring::burying, burning, burin, during
 ::busineses::business, businesses
-::cafe::café
+::cafe::cafï¿½
 ::calaber::caliber, calibre
 ::calander::calendar, calender, colander
 ::cancelled::canceled  ; commonwealth vs US
 ::cancelling::canceling  ; commonwealth vs US
-::canon::cañon
+::canon::caï¿½on
 ::cant::cannot, can not, can't
 ::carcas::carcass, Caracas
 ::carmel::caramel, carmel-by-the-sea
@@ -4780,9 +4780,9 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::clera::clear, sclera
 ::comander::commander, commandeer
 ::competion::competition, completion
-::continuum::continuüm
-::coopt::coöpt
-::coordinat::coördinat
+::continuum::continuï¿½m
+::coopt::coï¿½pt
+::coordinat::coï¿½rdinat
 ::coorperation::cooperation, corporation
 ::coudl::could, cloud
 ::councellor::councillor, counselor, councilor
@@ -4790,15 +4790,15 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::coururier::courier, couturier
 ::coverted::converted, covered, coveted
 ::cpoy::coy, copy
-::creme::crème
+::creme::crï¿½me
 ::dael::deal, dial, dahl
 ::deram::dram, dream
 ::desparate::desperate, disparate
 ::diea::idea, die
 ::dieing::dying, dyeing
 ::diversed::diverse, diverged
-::divorce::divorcé
-::Dona::Doña
+::divorce::divorcï¿½
+::Dona::Doï¿½a
 ::doub::doubt, daub
 ::dyas::dryas, Dyas (Robert Dyas is a hardware chain), dais
 ::efford::effort, afford
@@ -4806,7 +4806,7 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::eigth::eighth, eight
 ::electic::eclectic, electric
 ::electon::election, electron
-::elite::élite
+::elite::ï¿½lite
 ::emition::emission, emotion
 ::emminent::eminent, imminent
 ::empirial::empirical, imperial
@@ -4814,8 +4814,8 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::erally::orally, really
 ::erested::arrested, erected
 ::ethose::those, ethos
-::etude::étude
-::expose::exposé
+::etude::ï¿½tude
+::expose::exposï¿½
 ::extint::extinct, extant
 ::eyar::year, eyas
 ::eyars::years, eyas
@@ -4859,7 +4859,7 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::israelies::Israelis, Israelites
 ::labatory::lavatory, laboratory
 ::labled::labelled, labeled
-::lame::lamé
+::lame::lamï¿½
 ::leanr::lean, learn, leaner
 ::lible::libel, liable
 ::liscense::license, licence
@@ -4878,35 +4878,35 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::manuevers::maneuvers, manoeuvres
 ::mear::wear, mere, mare
 ::meranda::veranda, Miranda
-::Metis::Métis
+::Metis::Mï¿½tis
 ::mit::mitt, M.I.T., German "with"
 ::monestary::monastery, monetary
 ::moreso::more, more so
 ::muscels::mussels, muscles
-::ne::né
+::ne::nï¿½
 ::neice::niece, nice
 ::neigbour::neighbour, neighbor
 ::neigbouring::neighbouring, neighboring
 ::neigbours::neighbours, neighbors
 ::nto:: not ; Replaced with case sensitive for NTO acronym.
 ::oging::going, ogling
-::ole::olé
+::ole::olï¿½
 ::onot::note, not
-::opium::opïum
-::ore::öre
-::ore::øre
+::opium::opï¿½um
+::ore::ï¿½re
+::ore::ï¿½re
 ::orgin::origin, organ
 ::palce::place, palace
-::pate::pâte
-::pate::pâté
+::pate::pï¿½te
+::pate::pï¿½tï¿½
 ::performes::performed, performs
 ::personel::personnel, personal
 ::positon::position, positron
-::preëmpt
-::premiere::première
-::premiered::premièred
-::premieres::premières
-::premiering::premièring
+::preï¿½mpt
+::premiere::premiï¿½re
+::premiered::premiï¿½red
+::premieres::premiï¿½res
+::premiering::premiï¿½ring
 ::procede::proceed, precede
 ::proceded::proceeded, preceded
 ::procedes::proceeds, precedes
@@ -4917,15 +4917,15 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::prominately::prominently, predominately
 ::qtuie::quite, quiet
 ::qutie::quite, quiet
-::reenter::reënter
+::reenter::reï¿½nter
 ::relized::realised, realized
 ::repatition::repetition, repartition
-::residuum::residuüm
+::residuum::residuï¿½m
 ::restraunt::restraint, restaurant
-::resume::résumé
+::resume::rï¿½sumï¿½
 ::rigeur::rigueur, rigour, rigor
-::role::rôle
-::rose::rosé
+::role::rï¿½le
+::rose::rosï¿½
 ::sasy::says, sassy
 ::scholarstic::scholastic, scholarly
 ::secceeded::seceded, succeeded
@@ -4962,7 +4962,7 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::travelling::traveling   ; commonwealth vs US
 ::troups::troupes, troops
 ::turnk::turnkey, trunk
-::uber::über
+::uber::ï¿½ber
 ::unmanouverable::unmaneuverable, unmanoeuvrable
 ::unsed::used, unused, unsaid
 ::vigeur::vigueur, vigour, vigor
@@ -4976,7 +4976,7 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ::woulf::would, wolf
 ::ws::was, www.example.ws
 ::Yementite::Yemenite, Yemeni
-:?:oology::oölogy
+:?:oology::oï¿½logy
 :?:t he:: the  ; Can't use this. Needs to be cleverer.
 */
 

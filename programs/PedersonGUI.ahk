@@ -1,4 +1,5 @@
 ﻿; Created by Asger Juul Brunshøj
+; Source: https://github.com/plul/Public-AutoHotKey-Scripts
 
 ; Note: Save with encoding UTF-8 with BOM if possible.
 ; I had issues with special characters like in ¯\_(ツ)_/¯ that wouldn't work otherwise.

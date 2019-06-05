@@ -1,0 +1,186 @@
+﻿{
+	"City": {
+		"enemies": [
+			"Hipster",
+			"Hipster",
+			"Hipster",
+			"Muffin",
+			"Cat",
+			"Gangsta",
+			"Creeper",
+			"Businessman"
+		],
+		"events": [
+			"House"
+		],
+		"size": 30
+	},
+	"Farm": {
+		"enemies": [
+			"Cow",
+			"Farmer",
+			"Old farmer",
+			"Bat",
+			"Cat",
+			"Pig"
+		],
+		"events": [
+			"House",
+			"poo",
+			"hay"
+		],
+		"size": 15
+	},
+	"Forest": {
+		"enemies": [
+			"Spider",
+			"Spider",
+			"Spider",
+			"Snake",
+			"Snake",
+			"Snake",
+			"Mushroom",
+			"Mushroom",
+			"Mushroom",
+			"Mushroom",
+			"Witch",
+			"Wolf",
+			"Wolf",
+			"Bear"
+		],
+		"events": [
+			"climb",
+			"House"
+		],
+		"size": 21
+	},
+	"Jungle": {
+		"enemies": [
+			"Hippo",
+			"Tiger",
+			"Panther",
+			"Pointy vines",
+			"Pointy vines",
+			"Pointy vines",
+			"Pointy vines",
+			"Natives",
+			"Insect",
+			"Insect",
+			"Insect",
+			"Spider",
+			"Spider",
+			"Spider",
+			"Snake"
+		],
+		"events": {},
+		"size": 33
+	},
+	"Mountain": {
+		"enemies": [
+			"Billy goat",
+			"Billy goat",
+			"Billy goat",
+			"Mountain goat",
+			"Mountain goat",
+			"Markhor",
+			"Wild goat",
+			"Wild goat",
+			"Wild goat",
+			"Wild goat",
+			"Alpine goat",
+			"Goat herder"
+		],
+		"events": [
+			"House"
+		],
+		"size": 20
+	},
+	"Old house": {
+		"enemies": [
+			"Toaster",
+			"Chair",
+			"Wood plank",
+			"Mirror",
+			"Bucket",
+			"Mop"
+		],
+		"events": {},
+		"size": 8
+	},
+	"Plains": {
+		"enemies": [
+			"Prairie dog",
+			"Prairie dog",
+			"Snake",
+			"Snake",
+			"Tall grass",
+			"Tall grass",
+			"Tall grass",
+			"Tall grass",
+			"Coyote",
+			"Bunny",
+			"Bunny",
+			"Cuttle fish"
+		],
+		"events": [
+			"House"
+		],
+		"size": 24
+	},
+	"Plateau": {
+		"enemies": [
+			"Lion",
+			"Antelope",
+			"Antelope",
+			"Antelope",
+			"Zebra",
+			"Zebra",
+			"Zebra",
+			"Elephant",
+			"Rhino",
+			"Poacher",
+			"Tourist",
+			"Tourist",
+			"Tourist"
+		],
+		"events": {},
+		"size": 22
+	},
+	"Space": {
+		"enemies": [
+			"Tall alien",
+			"Tall alien",
+			"Green alien",
+			"Green alien",
+			"Gray alien",
+			"Gray alien",
+			"Big Brother",
+			"Big Brother",
+			"Comet",
+			"Nothing"
+		],
+		"events": {},
+		"size": 40
+	},
+	"Village": {
+		"enemies": [
+			"Old man",
+			"Old man",
+			"Old man",
+			"Old woman",
+			"Old woman",
+			"Annoyed teen",
+			"Dog",
+			"Dog",
+			"Dog",
+			"Cat",
+			"Cat",
+			"Cat",
+			"Fish"
+		],
+		"events": [
+			"House"
+		],
+		"size": 14
+	}
+}
