@@ -55,20 +55,31 @@
     |   |-- Hotstrings.ahk                  Script that is used for replacing strings that are typed with something else
     |   |-- HotStrings\                     Folder that holds all the scripts included in Hotstrings.ahk
     |   |   |
-    |   |   |--
-    |   |   `--
+    |   |   |--Foreing_chars\
+    |   |   |   |
+    |   |   |   `--greek.ahk                    Hotstring commands to paste greek Characters
+    |   |   |
+    |   |   `--symbols\
+    |   |       |
+    |   |       |--currency.ahk                 Hotstring commands to paste abnormal currency signs
+    |   |       `--standard.ahk                 Hotstring commands to paste normal symbols (like copyright © )
     |   |   
     |   |-- PedersonGui_UserCommands.ahk    Commands for the PedersonGUI ( Loaded by perdersonGui instead of directly by main.ahk )
     |   `-- PedersonGui_scripts\            Folder that holds all the scripts included in PedersonGui_UserCommands.shk
     |       |
-    |       |-- 
-    |       |--
-    |       `--
+    |       |-- searchWeb.ahk                   Commands to search the web
+    |       |-- launchWeb.ahk                   Commands to launch specific websites
+    |       |-- launchProgram.ahk               Commands to launch programs on PC
+    |       |-- launchGame.ahk                  Commands to launch games on PC (mostly the AHK script games)
+    |       |-- launchFolder.ahk                Commands to open specific folders
+    |       |-- launchFile.ahk                  Commands to open specific files
+    |       |-- guiHotstrings.ahk               Commands to paste text (normal hotstring behavior)
+    |       `-- guiAHK.ahk                      Commands specific to AHK (ie. reload)
     |
     |-- programs\               programs contains anything that actively runs
     |   |
     |   |--AutoCorrect.ahk                  Autocorrect script file that is loaded (or not) via configuration of settings.ini
-    |   |--Mirrored_Keyboard.ahk            Mirrors the right hand of the keyboard to the left for one handed typing
+    |   |--Mirrored_Keyboard.ahk            Mirrors the right hand of the keyboard to the left for one handed typing        (currently not implemented in any way)
     |   `--PedersonGui.ahk                  GUI that has a hotstring namespace allowing easy execution of commands without interfering with anything else
     |
     |-- Lib\                    This contains any script that is generic in that any script can reference it (not loaded by main but called as needed)

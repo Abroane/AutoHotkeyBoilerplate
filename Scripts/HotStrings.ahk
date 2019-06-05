@@ -22,9 +22,14 @@
 ;-------------------------------------------------------------------------------
 
   #include %A_ScriptDir%\scripts\hotstrings\symbols\standard.ahk
+        ;normal everyday symbols (like copyright)
+
+  #include %A_ScriptDir%\scripts\hotstrings\symbols\currency.ahk
+        ; hotstrings to easily print foreign currency
 
 ;-------------------------------------------------------------------------------
 ;;; foreign characters ;;;
 ;-------------------------------------------------------------------------------
 
   #include %A_ScriptDir%\scripts\hotstrings\foreign_chars\greek.ahk
+        ; for inputting greek foreign characters

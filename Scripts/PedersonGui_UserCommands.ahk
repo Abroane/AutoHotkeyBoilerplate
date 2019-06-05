@@ -27,9 +27,12 @@ if Pedersen = ? ; Tooltip with list of commands
     #include %A_ScriptDir%\scripts\PedersonGui_scripts\launchWeb.ahk
         ;Includes any command that just goes to a website without interacting with the site
 
-    #include %A_ScriptDir%\scripts\PedersonGui_scripts\launchPrograms.ahk
+    #include %A_ScriptDir%\scripts\PedersonGui_scripts\launchProgram.ahk
         ;Includes any command that launches a program installed on the PC
 
+    #include %A_ScriptDir%\scripts\PedersonGui_scripts\launchGame.ahk
+        ;includes any command that launches a game (normally the AHK games included)
+    
     #include %A_ScriptDir%\scripts\PedersonGui_scripts\launchFolder.ahk
         ;Includes any command that launches a specific folder on the pc, network mount, etc
 
@@ -41,9 +44,6 @@ if Pedersen = ? ; Tooltip with list of commands
 
     #include %A_ScriptDir%\scripts\PedersonGui_scripts\guiAHK.ahk
         ;This has any commands that interact directly with AHK (ex suspend or open the script file)
-
-    #include %A_ScriptDir%\scripts\PedersonGui_scripts\
-        ;
 
 ;-------------------------------------------------------------------------------
 ;;; Misc commands that don't really belong anywhere ;;;

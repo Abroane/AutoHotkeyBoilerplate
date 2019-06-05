@@ -1,4 +1,7 @@
 ; Script Information ===========================================================
+; original filename: Bulldozer - Revision 18 (2019-05-09)
+;
+;
 ; Name:         Bulldozer
 ; Description:  Bulldozer is an Autohotkey recreation the original Bulldozer 1,
 ;               Bulldozer 2, and Bulldozer 3 games originally developed by John
