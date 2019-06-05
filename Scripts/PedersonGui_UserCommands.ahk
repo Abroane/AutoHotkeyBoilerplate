@@ -11,11 +11,62 @@
 ;-------------------------------------------------------------------------------
 ;;; tooltip ;;; (also wanted the start of the if loop not inside a include file)
 ;-------------------------------------------------------------------------------
-if Pedersen = ? ; Tooltip with list of commands
-{
-    GuiControl,, Pedersen, ; Clear the input box
-    Gosub, gui_commandlibrary
-}
+if Pedersen = ?main ; Tooltip with list of commands
+    {
+        GuiControl,, Pedersen, ; Clear the input box
+        Gosub, gui_toolTip_Main
+    }
+
+else if Pedersen = ?searchWeb ; Lists all commands that search the web or search parts of websites
+    {
+        GuiControl,, Pedersen, ; Clear the input box
+        Gosub, gui_toolTip_searchWeb
+    }
+else if Pedersen = ?launchhWeb ; Lists all commands that search the web or search parts of websites
+    {
+        GuiControl,, Pedersen, ; Clear the input box
+        Gosub, gui_toolTip_launchWeb
+    }
+else if Pedersen = ?launchProgram ; Lists all commands that search the web or search parts of websites
+    {
+        GuiControl,, Pedersen, ; Clear the input box
+        Gosub, gui_toolTip_launchProgram
+    }
+else if Pedersen = ?launchSubroutine ; Lists all commands that search the web or search parts of websites
+    {
+        GuiControl,, Pedersen, ; Clear the input box
+        Gosub, gui_toolTip_launchSubroutine
+    }
+else if Pedersen = ?launchGame ; Lists all commands that search the web or search parts of websites
+    {
+        GuiControl,, Pedersen, ; Clear the input box
+        Gosub, gui_toolTip_launchGame
+    }
+else if Pedersen = ?launchFolder ; Lists all commands that search the web or search parts of websites
+    {
+        GuiControl,, Pedersen, ; Clear the input box
+        Gosub, gui_toolTip_launchFolder
+    }
+else if Pedersen = ?launchFile ; Lists all commands that search the web or search parts of websites
+    {
+        GuiControl,, Pedersen, ; Clear the input box
+        Gosub, gui_toolTip_launchFile
+    }
+else if Pedersen = ?guiHotstrings ; Lists all commands that search the web or search parts of websites
+    {
+        GuiControl,, Pedersen, ; Clear the input box
+        Gosub, gui_toolTip_guiHotstrings
+    }
+else if Pedersen = ?guiAHK ; Lists all commands that search the web or search parts of websites
+    {
+        GuiControl,, Pedersen, ; Clear the input box
+        Gosub, gui_toolTip_guiAHK
+    }
+else if Pedersen = ?misc ; Lists all commands that search the web or search parts of websites
+    {
+        GuiControl,, Pedersen, ; Clear the input box
+        Gosub, gui_toolTip_misc
+    }
 
 ;-------------------------------------------------------------------------------
 ;;; Command files include statements ;;;
@@ -29,6 +80,9 @@ if Pedersen = ? ; Tooltip with list of commands
 
     #include %A_ScriptDir%\scripts\PedersonGui_scripts\launchProgram.ahk
         ;Includes any command that launches a program installed on the PC
+
+    #include %A_ScriptDir%\scripts\PedersonGui_scripts\launchSubroutine.ahk
+        ;Includes any command that launches a AHK subroutine/script
 
     #include %A_ScriptDir%\scripts\PedersonGui_scripts\launchGame.ahk
         ;includes any command that launches a game (normally the AHK games included)
@@ -45,29 +99,5 @@ if Pedersen = ? ; Tooltip with list of commands
     #include %A_ScriptDir%\scripts\PedersonGui_scripts\guiAHK.ahk
         ;This has any commands that interact directly with AHK (ex suspend or open the script file)
 
-;-------------------------------------------------------------------------------
-;;; Misc commands that don't really belong anywhere ;;;
-;-------------------------------------------------------------------------------
-else if Pedersen = ping ; Ping Google
-{
-    gui_destroy()
-    Run, cmd /K "ping www.google.com"
-}
-else if Pedersen = date ; What is the date?
-{
-    gui_destroy()
-    FormatTime, date,, LongDate
-    MsgBox %date%
-    date =
-}
-else if Pedersen = week ; Which week is it?
-{
-    gui_destroy()
-    FormatTime, weeknumber,, YWeek
-    StringTrimLeft, weeknumbertrimmed, weeknumber, 4
-    if (weeknumbertrimmed = 53)
-        weeknumbertrimmed := 1
-    MsgBox It is currently week %weeknumbertrimmed%
-    weeknumber =
-    weeknumbertrimmed =
-}
+    #include %A_ScriptDir%\scripts\PedersonGui_scripts\misc.ahk
+        ;Random Commands that don't fit anywhere yet

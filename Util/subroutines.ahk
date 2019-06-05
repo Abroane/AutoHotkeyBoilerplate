@@ -47,7 +47,7 @@ return ;stops auto-execution of the following subcommands
 ;   Source: http://www.dcmembers.com/skrommel/download/kill/  (has some neat ideas there)
 ;--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    subroutine_ProcessKiller:
+    subroutine_processKiller:
         #SingleInstance,Force
         CoordMode,Mouse,Screen
 
@@ -170,4 +170,640 @@ return ;stops auto-execution of the following subcommands
         WinMove, ahk_id %EWD_MouseWin%,, EWD_WinX + EWD_MouseX - EWD_MouseStartX, EWD_WinY + EWD_MouseY - EWD_MouseStartY
         EWD_MouseStartX := EWD_MouseX  ; Update for the next timer-call to this subroutine.
         EWD_MouseStartY := EWD_MouseY
+        return
+
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+; Tool Tip Subroutines for PedersonGUI - Main File
+;   Author: Asger Juul Brunshøj
+;   Source: https://github.com/plul/Public-AutoHotKey-Scripts
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    gui_toolTip_Main:
+        ; hidden GUI used to pass font options to tooltip:
+        CoordMode, Tooltip, Screen ; To make sure the tooltip coordinates is displayed according to the screen and not active window
+        Gui, 2:Font,s10, Lucida Console
+        Gui, 2:Add, Text, HwndhwndStatic
+
+        tooltiptext =
+        maxpadding = 0
+        StringCaseSense, Off ; Matching to both if/If in the IfInString command below
+        Loop, read, %A_ScriptDir%\Scripts\PedersonGui_UserCommands.ahk
+        {
+            ; search for the string If Pedersen =, but search for each word individually because spacing between words might not be consistent. (might be improved with regex)
+            If Substr(A_LoopReadLine, 1, 1) != ";" ; Do not display commented commands
+            {
+                If A_LoopReadLine contains if
+                {
+                    IfInString, A_LoopReadLine, Pedersen
+                        IfInString, A_LoopReadLine, =
+                        {
+                            StringGetPos, setpos, A_LoopReadLine,=
+                            StringTrimLeft, trimmed, A_LoopReadLine, setpos+1 ; trim everything that comes before the = sign
+                            StringReplace, trimmed, trimmed, `%A_Space`%,{space}, All
+                            tooltiptext .= trimmed
+                            tooltiptext .= "`n"
+
+                            ; The following is used to correct padding:
+                            StringGetPos, commentpos, trimmed,`;
+                            if (maxpadding < commentpos)
+                                maxpadding := commentpos
+                        }
+                }
+            }
+        }
+        tooltiptextpadded =
+        Loop, Parse, tooltiptext,`n
+        {
+            line = %A_LoopField%
+            StringGetPos, commentpos, line, `;
+            spaces_to_insert := maxpadding - commentpos
+            Loop, %spaces_to_insert%
+            {
+                StringReplace, line, line,`;,%A_Space%`;
+            }
+            tooltiptextpadded .= line
+            tooltiptextpadded .= "`n"
+        }
+        Sort, tooltiptextpadded
+        ToolTip %tooltiptextpadded%, 3, 3, 1
+        return
+
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+; Tool Tip Subroutines for PedersonGUI - searchWeb.ahk
+;   Author: Asger Juul Brunshøj
+;   Source: https://github.com/plul/Public-AutoHotKey-Scripts
+;
+;   Modified by: Grant Ruhoff
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    gui_toolTip_searchWeb:
+        ; hidden GUI used to pass font options to tooltip:
+        CoordMode, Tooltip, Screen ; To make sure the tooltip coordinates is displayed according to the screen and not active window
+        Gui, 2:Font,s10, Lucida Console
+        Gui, 2:Add, Text, HwndhwndStatic
+
+        tooltiptext =
+        maxpadding = 0
+        StringCaseSense, Off ; Matching to both if/If in the IfInString command below
+        Loop, read, %A_ScriptDir%\Scripts\PedersonGui_scripts\searchWeb.ahk
+        {
+            ; search for the string If Pedersen =, but search for each word individually because spacing between words might not be consistent. (might be improved with regex)
+            If Substr(A_LoopReadLine, 1, 1) != ";" ; Do not display commented commands
+            {
+                If A_LoopReadLine contains if
+                {
+                    IfInString, A_LoopReadLine, Pedersen
+                        IfInString, A_LoopReadLine, =
+                        {
+                            StringGetPos, setpos, A_LoopReadLine,=
+                            StringTrimLeft, trimmed, A_LoopReadLine, setpos+1 ; trim everything that comes before the = sign
+                            StringReplace, trimmed, trimmed, `%A_Space`%,{space}, All
+                            tooltiptext .= trimmed
+                            tooltiptext .= "`n"
+
+                            ; The following is used to correct padding:
+                            StringGetPos, commentpos, trimmed,`;
+                            if (maxpadding < commentpos)
+                                maxpadding := commentpos
+                        }
+                }
+            }
+        }
+        tooltiptextpadded =
+        Loop, Parse, tooltiptext,`n
+        {
+            line = %A_LoopField%
+            StringGetPos, commentpos, line, `;
+            spaces_to_insert := maxpadding - commentpos
+            Loop, %spaces_to_insert%
+            {
+                StringReplace, line, line,`;,%A_Space%`;
+            }
+            tooltiptextpadded .= line
+            tooltiptextpadded .= "`n"
+        }
+        Sort, tooltiptextpadded
+        ToolTip %tooltiptextpadded%, 3, 3, 1
+        return
+
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+; Tool Tip Subroutines for PedersonGUI - launchWeb.ahk
+;   Author: Asger Juul Brunshøj
+;   Source: https://github.com/plul/Public-AutoHotKey-Scripts
+;
+;   Modified by: Grant Ruhoff
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    gui_toolTip_launchWeb:
+        ; hidden GUI used to pass font options to tooltip:
+        CoordMode, Tooltip, Screen ; To make sure the tooltip coordinates is displayed according to the screen and not active window
+        Gui, 2:Font,s10, Lucida Console
+        Gui, 2:Add, Text, HwndhwndStatic
+
+        tooltiptext =
+        maxpadding = 0
+        StringCaseSense, Off ; Matching to both if/If in the IfInString command below
+        Loop, read, %A_ScriptDir%\Scripts\PedersonGui_scripts\launchhWeb.ahk
+        {
+            ; search for the string If Pedersen =, but search for each word individually because spacing between words might not be consistent. (might be improved with regex)
+            If Substr(A_LoopReadLine, 1, 1) != ";" ; Do not display commented commands
+            {
+                If A_LoopReadLine contains if
+                {
+                    IfInString, A_LoopReadLine, Pedersen
+                        IfInString, A_LoopReadLine, =
+                        {
+                            StringGetPos, setpos, A_LoopReadLine,=
+                            StringTrimLeft, trimmed, A_LoopReadLine, setpos+1 ; trim everything that comes before the = sign
+                            StringReplace, trimmed, trimmed, `%A_Space`%,{space}, All
+                            tooltiptext .= trimmed
+                            tooltiptext .= "`n"
+
+                            ; The following is used to correct padding:
+                            StringGetPos, commentpos, trimmed,`;
+                            if (maxpadding < commentpos)
+                                maxpadding := commentpos
+                        }
+                }
+            }
+        }
+        tooltiptextpadded =
+        Loop, Parse, tooltiptext,`n
+        {
+            line = %A_LoopField%
+            StringGetPos, commentpos, line, `;
+            spaces_to_insert := maxpadding - commentpos
+            Loop, %spaces_to_insert%
+            {
+                StringReplace, line, line,`;,%A_Space%`;
+            }
+            tooltiptextpadded .= line
+            tooltiptextpadded .= "`n"
+        }
+        Sort, tooltiptextpadded
+        ToolTip %tooltiptextpadded%, 3, 3, 1
+        return
+
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+; Tool Tip Subroutines for PedersonGUI - launchProgram.ahk
+;   Author: Asger Juul Brunshøj
+;   Source: https://github.com/plul/Public-AutoHotKey-Scripts
+;
+;   Modified by: Grant Ruhoff
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    gui_toolTip_launchProgram:
+        ; hidden GUI used to pass font options to tooltip:
+        CoordMode, Tooltip, Screen ; To make sure the tooltip coordinates is displayed according to the screen and not active window
+        Gui, 2:Font,s10, Lucida Console
+        Gui, 2:Add, Text, HwndhwndStatic
+
+        tooltiptext =
+        maxpadding = 0
+        StringCaseSense, Off ; Matching to both if/If in the IfInString command below
+        Loop, read, %A_ScriptDir%\Scripts\PedersonGui_scripts\launchProgram.ahk
+        {
+            ; search for the string If Pedersen =, but search for each word individually because spacing between words might not be consistent. (might be improved with regex)
+            If Substr(A_LoopReadLine, 1, 1) != ";" ; Do not display commented commands
+            {
+                If A_LoopReadLine contains if
+                {
+                    IfInString, A_LoopReadLine, Pedersen
+                        IfInString, A_LoopReadLine, =
+                        {
+                            StringGetPos, setpos, A_LoopReadLine,=
+                            StringTrimLeft, trimmed, A_LoopReadLine, setpos+1 ; trim everything that comes before the = sign
+                            StringReplace, trimmed, trimmed, `%A_Space`%,{space}, All
+                            tooltiptext .= trimmed
+                            tooltiptext .= "`n"
+
+                            ; The following is used to correct padding:
+                            StringGetPos, commentpos, trimmed,`;
+                            if (maxpadding < commentpos)
+                                maxpadding := commentpos
+                        }
+                }
+            }
+        }
+        tooltiptextpadded =
+        Loop, Parse, tooltiptext,`n
+        {
+            line = %A_LoopField%
+            StringGetPos, commentpos, line, `;
+            spaces_to_insert := maxpadding - commentpos
+            Loop, %spaces_to_insert%
+            {
+                StringReplace, line, line,`;,%A_Space%`;
+            }
+            tooltiptextpadded .= line
+            tooltiptextpadded .= "`n"
+        }
+        Sort, tooltiptextpadded
+        ToolTip %tooltiptextpadded%, 3, 3, 1
+        return
+
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+; Tool Tip Subroutines for PedersonGUI - launchSubroutine.ahk
+;   Author: Asger Juul Brunshøj
+;   Source: https://github.com/plul/Public-AutoHotKey-Scripts
+;
+;   Modified by: Grant Ruhoff
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    gui_toolTip_launchSubroutine:
+        ; hidden GUI used to pass font options to tooltip:
+        CoordMode, Tooltip, Screen ; To make sure the tooltip coordinates is displayed according to the screen and not active window
+        Gui, 2:Font,s10, Lucida Console
+        Gui, 2:Add, Text, HwndhwndStatic
+
+        tooltiptext =
+        maxpadding = 0
+        StringCaseSense, Off ; Matching to both if/If in the IfInString command below
+        Loop, read, %A_ScriptDir%\Scripts\PedersonGui_scripts\launchSubroutine.ahk
+        {
+            ; search for the string If Pedersen =, but search for each word individually because spacing between words might not be consistent. (might be improved with regex)
+            If Substr(A_LoopReadLine, 1, 1) != ";" ; Do not display commented commands
+            {
+                If A_LoopReadLine contains if
+                {
+                    IfInString, A_LoopReadLine, Pedersen
+                        IfInString, A_LoopReadLine, =
+                        {
+                            StringGetPos, setpos, A_LoopReadLine,=
+                            StringTrimLeft, trimmed, A_LoopReadLine, setpos+1 ; trim everything that comes before the = sign
+                            StringReplace, trimmed, trimmed, `%A_Space`%,{space}, All
+                            tooltiptext .= trimmed
+                            tooltiptext .= "`n"
+
+                            ; The following is used to correct padding:
+                            StringGetPos, commentpos, trimmed,`;
+                            if (maxpadding < commentpos)
+                                maxpadding := commentpos
+                        }
+                }
+            }
+        }
+        tooltiptextpadded =
+        Loop, Parse, tooltiptext,`n
+        {
+            line = %A_LoopField%
+            StringGetPos, commentpos, line, `;
+            spaces_to_insert := maxpadding - commentpos
+            Loop, %spaces_to_insert%
+            {
+                StringReplace, line, line,`;,%A_Space%`;
+            }
+            tooltiptextpadded .= line
+            tooltiptextpadded .= "`n"
+        }
+        Sort, tooltiptextpadded
+        ToolTip %tooltiptextpadded%, 3, 3, 1
+        return
+
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+; Tool Tip Subroutines for PedersonGUI - launchGame.ahk
+;   Author: Asger Juul Brunshøj
+;   Source: https://github.com/plul/Public-AutoHotKey-Scripts
+;
+;   Modified by: Grant Ruhoff
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    gui_toolTip_launchGame:
+        ; hidden GUI used to pass font options to tooltip:
+        CoordMode, Tooltip, Screen ; To make sure the tooltip coordinates is displayed according to the screen and not active window
+        Gui, 2:Font,s10, Lucida Console
+        Gui, 2:Add, Text, HwndhwndStatic
+
+        tooltiptext =
+        maxpadding = 0
+        StringCaseSense, Off ; Matching to both if/If in the IfInString command below
+        Loop, read, %A_ScriptDir%\Scripts\PedersonGui_scripts\launchGame.ahk
+        {
+            ; search for the string If Pedersen =, but search for each word individually because spacing between words might not be consistent. (might be improved with regex)
+            If Substr(A_LoopReadLine, 1, 1) != ";" ; Do not display commented commands
+            {
+                If A_LoopReadLine contains if
+                {
+                    IfInString, A_LoopReadLine, Pedersen
+                        IfInString, A_LoopReadLine, =
+                        {
+                            StringGetPos, setpos, A_LoopReadLine,=
+                            StringTrimLeft, trimmed, A_LoopReadLine, setpos+1 ; trim everything that comes before the = sign
+                            StringReplace, trimmed, trimmed, `%A_Space`%,{space}, All
+                            tooltiptext .= trimmed
+                            tooltiptext .= "`n"
+
+                            ; The following is used to correct padding:
+                            StringGetPos, commentpos, trimmed,`;
+                            if (maxpadding < commentpos)
+                                maxpadding := commentpos
+                        }
+                }
+            }
+        }
+        tooltiptextpadded =
+        Loop, Parse, tooltiptext,`n
+        {
+            line = %A_LoopField%
+            StringGetPos, commentpos, line, `;
+            spaces_to_insert := maxpadding - commentpos
+            Loop, %spaces_to_insert%
+            {
+                StringReplace, line, line,`;,%A_Space%`;
+            }
+            tooltiptextpadded .= line
+            tooltiptextpadded .= "`n"
+        }
+        Sort, tooltiptextpadded
+        ToolTip %tooltiptextpadded%, 3, 3, 1
+        return
+
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+; Tool Tip Subroutines for PedersonGUI - launchFolder.ahk
+;   Author: Asger Juul Brunshøj
+;   Source: https://github.com/plul/Public-AutoHotKey-Scripts
+;
+;   Modified by: Grant Ruhoff
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    gui_toolTip_launchFolder:
+        ; hidden GUI used to pass font options to tooltip:
+        CoordMode, Tooltip, Screen ; To make sure the tooltip coordinates is displayed according to the screen and not active window
+        Gui, 2:Font,s10, Lucida Console
+        Gui, 2:Add, Text, HwndhwndStatic
+
+        tooltiptext =
+        maxpadding = 0
+        StringCaseSense, Off ; Matching to both if/If in the IfInString command below
+        Loop, read, %A_ScriptDir%\Scripts\PedersonGui_scripts\launchFolder.ahk
+        {
+            ; search for the string If Pedersen =, but search for each word individually because spacing between words might not be consistent. (might be improved with regex)
+            If Substr(A_LoopReadLine, 1, 1) != ";" ; Do not display commented commands
+            {
+                If A_LoopReadLine contains if
+                {
+                    IfInString, A_LoopReadLine, Pedersen
+                        IfInString, A_LoopReadLine, =
+                        {
+                            StringGetPos, setpos, A_LoopReadLine,=
+                            StringTrimLeft, trimmed, A_LoopReadLine, setpos+1 ; trim everything that comes before the = sign
+                            StringReplace, trimmed, trimmed, `%A_Space`%,{space}, All
+                            tooltiptext .= trimmed
+                            tooltiptext .= "`n"
+
+                            ; The following is used to correct padding:
+                            StringGetPos, commentpos, trimmed,`;
+                            if (maxpadding < commentpos)
+                                maxpadding := commentpos
+                        }
+                }
+            }
+        }
+        tooltiptextpadded =
+        Loop, Parse, tooltiptext,`n
+        {
+            line = %A_LoopField%
+            StringGetPos, commentpos, line, `;
+            spaces_to_insert := maxpadding - commentpos
+            Loop, %spaces_to_insert%
+            {
+                StringReplace, line, line,`;,%A_Space%`;
+            }
+            tooltiptextpadded .= line
+            tooltiptextpadded .= "`n"
+        }
+        Sort, tooltiptextpadded
+        ToolTip %tooltiptextpadded%, 3, 3, 1
+        return
+
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+; Tool Tip Subroutines for PedersonGUI - launchFile.ahk
+;   Author: Asger Juul Brunshøj
+;   Source: https://github.com/plul/Public-AutoHotKey-Scripts
+;
+;   Modified by: Grant Ruhoff
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    gui_toolTip_launchFile:
+        ; hidden GUI used to pass font options to tooltip:
+        CoordMode, Tooltip, Screen ; To make sure the tooltip coordinates is displayed according to the screen and not active window
+        Gui, 2:Font,s10, Lucida Console
+        Gui, 2:Add, Text, HwndhwndStatic
+
+        tooltiptext =
+        maxpadding = 0
+        StringCaseSense, Off ; Matching to both if/If in the IfInString command below
+        Loop, read, %A_ScriptDir%\Scripts\PedersonGui_scripts\launchFile.ahk
+        {
+            ; search for the string If Pedersen =, but search for each word individually because spacing between words might not be consistent. (might be improved with regex)
+            If Substr(A_LoopReadLine, 1, 1) != ";" ; Do not display commented commands
+            {
+                If A_LoopReadLine contains if
+                {
+                    IfInString, A_LoopReadLine, Pedersen
+                        IfInString, A_LoopReadLine, =
+                        {
+                            StringGetPos, setpos, A_LoopReadLine,=
+                            StringTrimLeft, trimmed, A_LoopReadLine, setpos+1 ; trim everything that comes before the = sign
+                            StringReplace, trimmed, trimmed, `%A_Space`%,{space}, All
+                            tooltiptext .= trimmed
+                            tooltiptext .= "`n"
+
+                            ; The following is used to correct padding:
+                            StringGetPos, commentpos, trimmed,`;
+                            if (maxpadding < commentpos)
+                                maxpadding := commentpos
+                        }
+                }
+            }
+        }
+        tooltiptextpadded =
+        Loop, Parse, tooltiptext,`n
+        {
+            line = %A_LoopField%
+            StringGetPos, commentpos, line, `;
+            spaces_to_insert := maxpadding - commentpos
+            Loop, %spaces_to_insert%
+            {
+                StringReplace, line, line,`;,%A_Space%`;
+            }
+            tooltiptextpadded .= line
+            tooltiptextpadded .= "`n"
+        }
+        Sort, tooltiptextpadded
+        ToolTip %tooltiptextpadded%, 3, 3, 1
+        return
+
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+; Tool Tip Subroutines for PedersonGUI - guiHotstrings.ahk
+;   Author: Asger Juul Brunshøj
+;   Source: https://github.com/plul/Public-AutoHotKey-Scripts
+;
+;   Modified by: Grant Ruhoff
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    gui_toolTip_guiHotstrings:
+        ; hidden GUI used to pass font options to tooltip:
+        CoordMode, Tooltip, Screen ; To make sure the tooltip coordinates is displayed according to the screen and not active window
+        Gui, 2:Font,s10, Lucida Console
+        Gui, 2:Add, Text, HwndhwndStatic
+
+        tooltiptext =
+        maxpadding = 0
+        StringCaseSense, Off ; Matching to both if/If in the IfInString command below
+        Loop, read, %A_ScriptDir%\Scripts\PedersonGui_scripts\guiHotstrings.ahk
+        {
+            ; search for the string If Pedersen =, but search for each word individually because spacing between words might not be consistent. (might be improved with regex)
+            If Substr(A_LoopReadLine, 1, 1) != ";" ; Do not display commented commands
+            {
+                If A_LoopReadLine contains if
+                {
+                    IfInString, A_LoopReadLine, Pedersen
+                        IfInString, A_LoopReadLine, =
+                        {
+                            StringGetPos, setpos, A_LoopReadLine,=
+                            StringTrimLeft, trimmed, A_LoopReadLine, setpos+1 ; trim everything that comes before the = sign
+                            StringReplace, trimmed, trimmed, `%A_Space`%,{space}, All
+                            tooltiptext .= trimmed
+                            tooltiptext .= "`n"
+
+                            ; The following is used to correct padding:
+                            StringGetPos, commentpos, trimmed,`;
+                            if (maxpadding < commentpos)
+                                maxpadding := commentpos
+                        }
+                }
+            }
+        }
+        tooltiptextpadded =
+        Loop, Parse, tooltiptext,`n
+        {
+            line = %A_LoopField%
+            StringGetPos, commentpos, line, `;
+            spaces_to_insert := maxpadding - commentpos
+            Loop, %spaces_to_insert%
+            {
+                StringReplace, line, line,`;,%A_Space%`;
+            }
+            tooltiptextpadded .= line
+            tooltiptextpadded .= "`n"
+        }
+        Sort, tooltiptextpadded
+        ToolTip %tooltiptextpadded%, 3, 3, 1
+        return
+
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+; Tool Tip Subroutines for PedersonGUI - guiAHK.ahk
+;   Author: Asger Juul Brunshøj
+;   Source: https://github.com/plul/Public-AutoHotKey-Scripts
+;
+;   Modified by: Grant Ruhoff
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    gui_toolTip_guiAHK:
+        ; hidden GUI used to pass font options to tooltip:
+        CoordMode, Tooltip, Screen ; To make sure the tooltip coordinates is displayed according to the screen and not active window
+        Gui, 2:Font,s10, Lucida Console
+        Gui, 2:Add, Text, HwndhwndStatic
+
+        tooltiptext =
+        maxpadding = 0
+        StringCaseSense, Off ; Matching to both if/If in the IfInString command below
+        Loop, read, %A_ScriptDir%\Scripts\PedersonGui_scripts\guiAHK.ahk
+        {
+            ; search for the string If Pedersen =, but search for each word individually because spacing between words might not be consistent. (might be improved with regex)
+            If Substr(A_LoopReadLine, 1, 1) != ";" ; Do not display commented commands
+            {
+                If A_LoopReadLine contains if
+                {
+                    IfInString, A_LoopReadLine, Pedersen
+                        IfInString, A_LoopReadLine, =
+                        {
+                            StringGetPos, setpos, A_LoopReadLine,=
+                            StringTrimLeft, trimmed, A_LoopReadLine, setpos+1 ; trim everything that comes before the = sign
+                            StringReplace, trimmed, trimmed, `%A_Space`%,{space}, All
+                            tooltiptext .= trimmed
+                            tooltiptext .= "`n"
+
+                            ; The following is used to correct padding:
+                            StringGetPos, commentpos, trimmed,`;
+                            if (maxpadding < commentpos)
+                                maxpadding := commentpos
+                        }
+                }
+            }
+        }
+        tooltiptextpadded =
+        Loop, Parse, tooltiptext,`n
+        {
+            line = %A_LoopField%
+            StringGetPos, commentpos, line, `;
+            spaces_to_insert := maxpadding - commentpos
+            Loop, %spaces_to_insert%
+            {
+                StringReplace, line, line,`;,%A_Space%`;
+            }
+            tooltiptextpadded .= line
+            tooltiptextpadded .= "`n"
+        }
+        Sort, tooltiptextpadded
+        ToolTip %tooltiptextpadded%, 3, 3, 1
+        return
+
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+; Tool Tip Subroutines for PedersonGUI - misc.ahk
+;   Author: Asger Juul Brunshøj
+;   Source: https://github.com/plul/Public-AutoHotKey-Scripts
+;
+;   Modified by: Grant Ruhoff
+;--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    gui_toolTip_misc:
+        ; hidden GUI used to pass font options to tooltip:
+        CoordMode, Tooltip, Screen ; To make sure the tooltip coordinates is displayed according to the screen and not active window
+        Gui, 2:Font,s10, Lucida Console
+        Gui, 2:Add, Text, HwndhwndStatic
+
+        tooltiptext =
+        maxpadding = 0
+        StringCaseSense, Off ; Matching to both if/If in the IfInString command below
+        Loop, read, %A_ScriptDir%\Scripts\PedersonGui_scripts\misc.ahk
+        {
+            ; search for the string If Pedersen =, but search for each word individually because spacing between words might not be consistent. (might be improved with regex)
+            If Substr(A_LoopReadLine, 1, 1) != ";" ; Do not display commented commands
+            {
+                If A_LoopReadLine contains if
+                {
+                    IfInString, A_LoopReadLine, Pedersen
+                        IfInString, A_LoopReadLine, =
+                        {
+                            StringGetPos, setpos, A_LoopReadLine,=
+                            StringTrimLeft, trimmed, A_LoopReadLine, setpos+1 ; trim everything that comes before the = sign
+                            StringReplace, trimmed, trimmed, `%A_Space`%,{space}, All
+                            tooltiptext .= trimmed
+                            tooltiptext .= "`n"
+
+                            ; The following is used to correct padding:
+                            StringGetPos, commentpos, trimmed,`;
+                            if (maxpadding < commentpos)
+                                maxpadding := commentpos
+                        }
+                }
+            }
+        }
+        tooltiptextpadded =
+        Loop, Parse, tooltiptext,`n
+        {
+            line = %A_LoopField%
+            StringGetPos, commentpos, line, `;
+            spaces_to_insert := maxpadding - commentpos
+            Loop, %spaces_to_insert%
+            {
+                StringReplace, line, line,`;,%A_Space%`;
+            }
+            tooltiptextpadded .= line
+            tooltiptextpadded .= "`n"
+        }
+        Sort, tooltiptextpadded
+        ToolTip %tooltiptextpadded%, 3, 3, 1
         return

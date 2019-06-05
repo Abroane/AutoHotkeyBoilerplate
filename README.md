@@ -120,6 +120,3 @@
 Whole starting point            - denolfe           from https://github.com/denolfe/AutoHotkeyBoilerplate
 
 Other Credit will be with the script in comments.  Not all scripts remain unaltered (though games normally are in complete original code)
-
-
-
